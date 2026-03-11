@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap");
+:root {
+  --gold: #c9a84c;
+  --gold-dark: #b8963e;
+  --bg: #0d0d0d;
+  --surface: #141414;
+  --border: #2a2a2a;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: white;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+[dir="rtl"] body,
+[dir="rtl"] * {
+  font-family: "IBM Plex Sans Arabic", "DM Sans", sans-serif;
+}
+
+.font-arabic {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: -0.02em;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4 {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  letter-spacing: 0;
+}
+
+.section-label {
+  @apply text-[#c9a84c] text-xs font-semibold tracking-widest uppercase mb-3;
+}
+
+.section-label-line {
+  @apply inline-flex flex-col gap-1;
+}
+
+.section-label-line::after {
+  content: "";
+  @apply block w-8 h-0.5 bg-[#c9a84c];
+}
+
+.gold-btn {
+  @apply bg-[#c9a84c] hover:bg-[#b8963e] text-black text-sm font-semibold px-6 py-3 rounded transition-colors;
+}
+
+.outline-btn {
+  @apply border border-[#c9a84c] text-[#c9a84c] hover:bg-[#c9a84c] hover:text-black text-sm font-semibold px-6 py-3 rounded transition-colors;
+}
+
+.card {
+  @apply bg-[#141414] border border-[#2a2a2a] rounded-xl p-6;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
