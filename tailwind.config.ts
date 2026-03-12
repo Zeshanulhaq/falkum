@@ -13,8 +13,8 @@ const config: Config = {
         gold: "#c9a84c",
       },
       fontFamily: {
-        arabic: ["IBM Plex Sans Arabic", "sans-serif"],
-        sans: ["Inter", "sans-serif"],
+        arabic: ["Noto Sans Arabic", "Verdana", "sans-serif"],
+        sans: ["Verdana", "Geneva", "sans-serif"],
       },
     },
   },

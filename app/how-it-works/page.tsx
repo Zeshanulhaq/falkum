@@ -11,8 +11,8 @@ export default function HowItWorksPage() {
     <>
       <section className="px-4 pt-14 pb-12 max-w-4xl mx-auto text-center">
         <p className="section-label inline-block">{h.label}</p>
-        <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">{h.title}</h1>
-        <p className="text-[#888] text-sm sm:text-base leading-relaxed">{h.subtitle}</p>
+        <h1 className="text-3xl md:text-5xl font-bold text-[#F5E7B2] mb-4">{h.title}</h1>
+        <p className="text-[#B7A87A] text-sm sm:text-base leading-relaxed">{h.subtitle}</p>
       </section>
 
       {/* Steps */}
@@ -28,9 +28,9 @@ export default function HowItWorksPage() {
                   <span className="text-[#c9a84c] text-xs font-bold">{step.num}</span>
                 </div>
                 <div className="flex-1 bg-[#141414] border border-[#2a2a2a] rounded-2xl p-6 hover:border-[#c9a84c]/30 transition-colors">
-                  <h2 className="text-white font-bold text-lg mb-2">{step.title}</h2>
-                  <p className="text-[#888] text-sm leading-relaxed mb-3">{step.desc}</p>
-                  <p className="text-[#666] text-xs leading-relaxed border-t border-[#1e1e1e] pt-3">{step.detail}</p>
+                  <h2 className="text-[#F5E7B2] font-bold text-lg mb-2">{step.title}</h2>
+                  <p className="text-[#B7A87A] text-sm leading-relaxed mb-3">{step.desc}</p>
+                  <p className="text-[#B7A87A] text-xs leading-relaxed border-t border-[#1e1e1e] pt-3">{step.detail}</p>
                 </div>
               </div>
             ))}
@@ -41,7 +41,7 @@ export default function HowItWorksPage() {
           <svg className="w-5 h-5 text-[#c9a84c] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          <p className="text-[#888] text-sm leading-relaxed">{h.note}</p>
+          <p className="text-[#B7A87A] text-sm leading-relaxed">{h.note}</p>
         </div>
       </section>
 

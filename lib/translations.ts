@@ -47,6 +47,8 @@ export const translations = {
           "Because Falkum earns on successful closure, the process stays focused on serious matches, clear negotiations, and progressing the transaction to completion.",
         alignedItems: ["Success-fee model", "Outcome-driven execution"],
       },
+      trustSummary:
+        "Falkum combines rigorous buyer qualification, financial framing, and outcome-driven execution so both sellers and serious buyers benefit from a single, aligned transaction partner.",
       stats: {
         hours: { value: "24h", label: "Target initial response window for new seller and buyer inquiries." },
         confidential: { value: "100%", label: "Confidential handling for private documents and sensitive asset information." },
@@ -59,10 +61,11 @@ export const translations = {
         subtitle:
           "Falkum supports sellers across multiple asset classes, with tailored positioning for different buyer profiles and transaction sizes.",
         cta: "Start a confidential discussion",
-        villas: { title: "Villas and residences", desc: "Private homes, luxury villas, compounds, and estates. Targeted at individual and family buyers.", tag1: "Private homes", tag2: "Major KSA cities" },
-        buildings: { title: "Buildings and income assets", desc: "Apartment buildings, mixed use developments, and leased assets. Income-generating assets marketed better.", tag1: "Buildings", tag2: "Well-driven assets" },
-        hotels: { title: "Hotels and hospitality", desc: "Hospitality assets handled with discreet marketing and investor-oriented presentation to attract serious acquisition conversations.", tag1: "Hotels", tag2: "Institutional tenants" },
-        hospitals: { title: "Hospitals and specialized assets", desc: "Complex institutional and commercial properties supported through buyer matching, documentation, and acquisition close coordination.", tag1: "Hospitals", tag2: "Due diligence support" },
+        viewDetails: "View details",
+        villas: { title: "Villas and residences", desc: "Private homes, luxury villas, compounds, and estates. Targeted at individual and family buyers.", tag1: "Private homes", tag2: "Major KSA cities", badge: "Residential" },
+        buildings: { title: "Buildings and income assets", desc: "Apartment buildings, mixed use developments, and leased assets. Income-generating assets marketed better.", tag1: "Buildings", tag2: "Well-driven assets", badge: "Investment" },
+        hotels: { title: "Hotels and hospitality", desc: "Hospitality assets handled with discreet marketing and investor-oriented presentation to attract serious acquisition conversations.", tag1: "Hotels", tag2: "Institutional tenants", badge: "Commercial" },
+        hospitals: { title: "Hospitals and specialized assets", desc: "Complex institutional and commercial properties supported through buyer matching, documentation, and acquisition close coordination.", tag1: "Hospitals", tag2: "Due diligence support", badge: "Specialized" },
       },
       howItWorks: {
         label: "HOW IT WORKS",
@@ -82,10 +85,10 @@ export const translations = {
         title: "Reach Falkum through the channels available from day one",
         subtitle:
           "Initially, clients can contact the team through WhatsApp, email, social media, or a unified number. This section acts as the first contact page experience on the landing site.",
-        whatsapp: { label: "WhatsApp", value: "+966 50 123 4567" },
-        email: { label: "Email", value: "info@falkum.sa" },
-        unified: { label: "Unified number", value: "9200 12345" },
-        social: { label: "Social media", value: "@falkum.sa" },
+        whatsapp: { label: "WhatsApp", desc: "Start fast conversations for seller onboarding, buyer matching, and initial property discussions.", value: "+966 50 123 4567" },
+        email: { label: "Email", desc: "Share property details, asset summaries, and documentation requests in a structured written channel.", value: "info@falkum.sa" },
+        unified: { label: "Unified number", desc: "A central line for seller inquiries, investor requests, and coordination with the Falkum team.", value: "9200 12345" },
+        social: { label: "Social media", desc: "Maintain brand presence, answer general inquiries, and route serious prospects into direct conversation.", value: "@falkum.sa" },
       },
       cta: {
         label: "SELLER FIRST PLATFORM",
@@ -396,6 +399,8 @@ export const translations = {
         alignedDesc: "لأن فالكم تكسب عند الإغلاق الناجح، تظل العملية مركزة على المطابقات الجادة والتفاوض الواضح.",
         alignedItems: ["نموذج رسوم النجاح", "تنفيذ موجّه بالنتائج"],
       },
+      trustSummary:
+        "تدمج فالكم تأهيل المشترين الصارم والإطار المالي والتنفيذ الموجّه بالنتائج ليستفيد البائعون والمشترون الجادون من شريك معاملات واحد ومتوائم.",
       stats: {
         hours: { value: "24 ساعة", label: "نافذة الاستجابة المستهدفة لاستفسارات البائعين والمشترين الجدد." },
         confidential: { value: "100%", label: "معالجة سرية للوثائق الخاصة والمعلومات الحساسة." },
@@ -407,10 +412,11 @@ export const translations = {
         title: "مصمم للمبيعات السكنية والتجارية",
         subtitle: "تدعم فالكم البائعين عبر فئات أصول متعددة مع تموضع مخصص لملفات المشترين المختلفة وأحجام المعاملات.",
         cta: "ابدأ نقاشاً سرياً",
-        villas: { title: "الفلل والمساكن", desc: "منازل خاصة وفلل فاخرة ومجمعات وعقارات. موجّهة للمشترين الأفراد والعائلات.", tag1: "منازل خاصة", tag2: "مدن المملكة الكبرى" },
-        buildings: { title: "المباني والأصول الدخلية", desc: "عمارات سكنية ومشاريع متعددة الاستخدامات وأصول مؤجرة. تسويق أفضل للأصول المدرّة للدخل.", tag1: "مباني", tag2: "أصول دخلية" },
-        hotels: { title: "الفنادق والضيافة", desc: "أصول الضيافة مع تسويق سري وعرض موجّه للمستثمرين لاستقطاب محادثات الاستحواذ الجادة.", tag1: "فنادق", tag2: "مستأجرون مؤسسيون" },
-        hospitals: { title: "المستشفيات والأصول المتخصصة", desc: "عقارات مؤسسية وتجارية معقدة مدعومة بمطابقة المشترين والتوثيق وتنسيق إغلاق الاستحواذ.", tag1: "مستشفيات", tag2: "دعم العناية الواجبة" },
+        viewDetails: "عرض التفاصيل",
+        villas: { title: "الفلل والمساكن", desc: "منازل خاصة وفلل فاخرة ومجمعات وعقارات. موجّهة للمشترين الأفراد والعائلات.", tag1: "منازل خاصة", tag2: "مدن المملكة الكبرى", badge: "سكني" },
+        buildings: { title: "المباني والأصول الدخلية", desc: "عمارات سكنية ومشاريع متعددة الاستخدامات وأصول مؤجرة. تسويق أفضل للأصول المدرّة للدخل.", tag1: "مباني", tag2: "أصول دخلية", badge: "استثمار" },
+        hotels: { title: "الفنادق والضيافة", desc: "أصول الضيافة مع تسويق سري وعرض موجّه للمستثمرين لاستقطاب محادثات الاستحواذ الجادة.", tag1: "فنادق", tag2: "مستأجرون مؤسسيون", badge: "تجاري" },
+        hospitals: { title: "المستشفيات والأصول المتخصصة", desc: "عقارات مؤسسية وتجارية معقدة مدعومة بمطابقة المشترين والتوثيق وتنسيق إغلاق الاستحواذ.", tag1: "مستشفيات", tag2: "دعم العناية الواجبة", badge: "متخصص" },
       },
       howItWorks: {
         label: "كيف يعمل",
@@ -428,10 +434,10 @@ export const translations = {
         label: "صفحة التواصل",
         title: "تواصل مع فالكم عبر القنوات المتاحة",
         subtitle: "يمكن للعملاء التواصل مع الفريق عبر واتساب أو البريد الإلكتروني أو وسائل التواصل الاجتماعي أو الرقم الموحد.",
-        whatsapp: { label: "واتساب", value: "+966 50 123 4567" },
-        email: { label: "البريد الإلكتروني", value: "info@falkum.sa" },
-        unified: { label: "الرقم الموحد", value: "9200 12345" },
-        social: { label: "وسائل التواصل", value: "@falkum.sa" },
+        whatsapp: { label: "واتساب", desc: "ابدأ محادثات سريعة لتأهيل البائعين ومطابقة المشترين والمناقشات الأولية للعقارات.", value: "+966 50 123 4567" },
+        email: { label: "البريد الإلكتروني", desc: "شارك تفاصيل العقار وملخصات الأصول وطلبات التوثيق في قناة مكتوبة منظمة.", value: "info@falkum.sa" },
+        unified: { label: "الرقم الموحد", desc: "خط مركزي لاستفسارات البائعين وطلبات المستثمرين والتنسيق مع فريق فالكم.", value: "9200 12345" },
+        social: { label: "وسائل التواصل الاجتماعي", desc: "حافظ على الحضور الرقمي، رد على الاستفسارات العامة، ووجّه الاحتمالات الجادة نحو محادثة مباشرة.", value: "@falkum.sa" },
       },
       cta: {
         label: "منصة البائع أولاً",

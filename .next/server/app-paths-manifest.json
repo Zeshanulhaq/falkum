@@ -1,0 +1,8 @@
+{
+  "/page": "app/page.js",
+  "/asset-types/villas/page": "app/asset-types/villas/page.js",
+  "/how-it-works/page": "app/how-it-works/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/asset-types/page": "app/asset-types/page.js",
+  "/icon.svg/route": "app/icon.svg/route.js"
+}
