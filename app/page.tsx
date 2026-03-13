@@ -15,10 +15,10 @@ export default function HomePage() {
       <section className="px-4 py-16 md:py-24 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#F5E7B2] leading-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#edcfa1] leading-tight mb-6">
               {h.hero.title}
             </h1>
-            <p className="text-[#B7A87A] text-sm sm:text-[19px] leading-8 mb-8">
+            <p className="text-[#edcfa1] text-sm sm:text-[19px] leading-8 mb-8">
               {h.hero.subtitle}
             </p>
 
@@ -37,12 +37,12 @@ export default function HomePage() {
               ].map(tag => (
                 <div
                   key={tag.label}
-                  className="bg-[#141414] border border-[#2a2a2a] rounded-lg p-3"
+                  className="bg-[#0f1a2b] border border-[#1a2942] rounded-lg p-3"
                 >
-                  <p className="text-[#c9a84c] text-[10px] font-semibold tracking-widest uppercase mb-1">
+                  <p className="text-[#bf8b55] text-[10px] font-semibold tracking-widest uppercase mb-1">
                     {tag.label}
                   </p>
-                  <p className="text-[#777] text-xs leading-relaxed">
+                  <p className="text-[#8f7e64] text-xs leading-relaxed">
                     {tag.desc}
                   </p>
                 </div>
@@ -69,19 +69,19 @@ export default function HomePage() {
               className="w-full h-full object-cover rounded-xl"
             />
             <div className="grid grid-cols-2 gap-3">
-              <div className="bg-[#141414] border border-[#2a2a2a] rounded-lg p-4">
-                <p className="text-[#F5E7B2] font-semibold mb-1">
+              <div className="bg-[#0f1a2b] border border-[#1a2942] rounded-lg p-4">
+                <p className="text-[#edcfa1] font-semibold mb-1">
                   {h.assetTypes.residential}
                 </p>
-                <p className="text-[#B7A87A] text-xs">
+                <p className="text-[#edcfa1] text-xs">
                   {h.assetTypes.residentialDesc}
                 </p>
               </div>
-              <div className="bg-[#141414] border border-[#2a2a2a] rounded-lg p-4">
-                <p className="text-[#F5E7B2] font-semibold mb-1">
+              <div className="bg-[#0f1a2b] border border-[#1a2942] rounded-lg p-4">
+                <p className="text-[#edcfa1] font-semibold mb-1">
                   {h.assetTypes.commercial}
                 </p>
-                <p className="text-[#B7A87A] text-xs">
+                <p className="text-[#edcfa1] text-xs">
                   {h.assetTypes.commercialDesc}
                 </p>
               </div>
@@ -91,14 +91,14 @@ export default function HomePage() {
       </section>
 
       {/* Why Falkum – build to create (single container) */}
-      <section className="px-4 py-16 md:py-20 border-t border-[#1e1e1e]">
+      <section className="px-4 py-16 md:py-20 border-t border-[#0f1a2b]">
         <div className="max-w-7xl mx-auto space-y-10">
           <div>
             <p className="section-label">{h.trust.label}</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#F5E7B2] mb-4 max-w-2xl">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#edcfa1] mb-4 max-w-2xl">
               {h.trust.title}
             </h2>
-            <p className="text-[#B7A87A] text-sm leading-relaxed max-w-xl">
+            <p className="text-[#edcfa1] text-sm leading-relaxed max-w-xl">
               {h.trust.subtitle}
             </p>
           </div>
@@ -121,23 +121,23 @@ export default function HomePage() {
               },
             ].map(card => (
               <div key={card.title} className="card">
-                <div className="w-8 h-8 bg-[#1e1e1e] border border-[#333] rounded-lg mb-4 flex items-center justify-center">
-                  <div className="w-3 h-3 rounded-full bg-[#c9a84c]" />
+                <div className="w-8 h-8 bg-[#0f1a2b] border border-[#1a2942] rounded-lg mb-4 flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-[#bf8b55]" />
                 </div>
-                <h3 className="text-[#F5E7B2] font-semibold text-base mb-2">
+                <h3 className="text-[#edcfa1] font-semibold text-base mb-2">
                   {card.title}
                 </h3>
-                <p className="text-[#B7A87A] text-sm leading-relaxed mb-3">
+                <p className="text-[#edcfa1] text-sm leading-relaxed mb-3">
                   {card.desc}
                 </p>
                 <ul className="space-y-1">
                   {card.items.map(item => (
                     <li
                       key={item}
-                      className="flex items-center gap-2 text-[#F5E7B2] text-xs"
+                      className="flex items-center gap-2 text-[#edcfa1] text-xs"
                     >
                       <svg
-                        className="w-3.5 h-3.5 text-[#c9a84c] shrink-0"
+                        className="w-3.5 h-3.5 text-[#bf8b55] shrink-0"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -156,7 +156,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <div className="p-8 bg-[#101012] border border-[#2a2a2a] rounded-lg">
+          <div className="p-8 bg-[#0f1a2b] border border-[#1a2942] rounded-lg">
             <div className="grid grid-cols-2 md:grid-cols-4">
               {[
                 h.stats.hours,
@@ -166,19 +166,19 @@ export default function HomePage() {
               ].map(s => (
                 <div
                   key={s.value}
-                  className={`bg-[#141414] border-r border-[#2a2a2a] ${s.value === h.stats.upfront.value ? "border-r-0" : "border-r"} p-6`}
+                  className={`bg-[#0f1a2b] border-r border-[#1a2942] ${s.value === h.stats.upfront.value ? "border-r-0" : "border-r"} p-6`}
                 >
-                  <p className="text-[#F5E7B2] text-2xl font-bold mb-4">
+                  <p className="text-[#edcfa1] text-2xl font-bold mb-4">
                     {s.value}
                   </p>
-                  <p className="text-[#B7A87A] text-xs leading-relaxed">
+                  <p className="text-[#edcfa1] text-xs leading-relaxed">
                     {s.label}
                   </p>
                 </div>
               ))}
             </div>
 
-            <p className="text-[#B7A87A] text-sm leading-relaxed max-w-2xl mt-4">
+            <p className="text-[#edcfa1] text-sm leading-relaxed max-w-2xl mt-4">
               {h.trustSummary}
             </p>
           </div>
@@ -186,15 +186,15 @@ export default function HomePage() {
       </section>
 
       {/* Asset Categories */}
-      <section className="px-4 py-16 md:py-20 border-t border-[#1e1e1e]">
+      <section className="px-4 py-16 md:py-20 border-t border-[#0f1a2b]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
               <p className="section-label">{h.assetCategories.label}</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#F5E7B2] mb-3">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#edcfa1] mb-3">
                 {h.assetCategories.title}
               </h2>
-              <p className="text-[#B7A87A] text-sm leading-relaxed max-w-lg">
+              <p className="text-[#edcfa1] text-sm leading-relaxed max-w-lg">
                 {h.assetCategories.subtitle}
               </p>
             </div>
@@ -229,7 +229,7 @@ export default function HomePage() {
               },
             ].map(({ href, data, image }) => (
               <Link key={href} href={href} className="group block">
-                <div className="card hover:border-[#c9a84c]/40 transition-colors flex flex-col h-full">
+                <div className="card hover:border-[#bf8b55]/40 transition-colors flex flex-col h-full">
                   <Image
                     src={image}
                     alt=""
@@ -237,20 +237,20 @@ export default function HomePage() {
                     height={220}
                     className="w-full h-full object-cover rounded-xl"
                   />
-                  <span className="inline-block mt-2 text-[10px] font-semibold tracking-widest uppercase bg-[#1e1e1e] text-[#c9a84c] px-2 py-0.5 rounded mb-2 w-fit">
+                  <span className="inline-block mt-2 text-[10px] font-semibold tracking-widest uppercase bg-[#0f1a2b] text-[#bf8b55] px-2 py-0.5 rounded mb-2 w-fit">
                     {data.badge}
                   </span>
-                  <h3 className="text-[#F5E7B2] font-semibold text-sm mb-2 group-hover:text-[#c9a84c] transition-colors">
+                  <h3 className="text-[#edcfa1] font-semibold text-sm mb-2 group-hover:text-[#bf8b55] transition-colors">
                     {data.title}
                   </h3>
-                  <p className="text-[#B7A87A] text-xs leading-relaxed mb-3 flex-1">
+                  <p className="text-[#edcfa1] text-xs leading-relaxed mb-3 flex-1">
                     {data.desc}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4 mt-2">
-                    <span className="text-[10px] text-[#B7A87A] bg-[#1a1a1a] border border-[#333] px-2 py-0.5 rounded">
+                    <span className="text-[10px] text-[#edcfa1] bg-[#0f1a2b] border border-[#1a2942] px-2 py-0.5 rounded">
                       {data.tag1}
                     </span>
-                    <span className="text-[10px] text-[#B7A87A] bg-[#1a1a1a] border border-[#333] px-2 py-0.5 rounded">
+                    <span className="text-[10px] text-[#edcfa1] bg-[#0f1a2b] border border-[#1a2942] px-2 py-0.5 rounded">
                       {data.tag2}
                     </span>
                   </div>
@@ -278,49 +278,49 @@ export default function HomePage() {
       </section>
 
       {/* Clear path – How it works + Contact channels (single section) */}
-      <section className="px-4 py-16 md:py-20 border-t border-[#1e1e1e]">
+      <section className="px-4 py-16 md:py-20 border-t border-[#0f1a2b]">
         <div className="max-w-7xl mx-auto space-y-12">
           <div className="">
             <p className="section-label">{h.howItWorks.label}</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#F5E7B2] mb-4 max-w-[860px]">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#edcfa1] mb-4 max-w-[860px]">
               {h.howItWorks.title}
             </h2>
-            <p className="text-[#B7A87A] text-sm leading-relaxed mb-8 max-w-[860px]">
+            <p className="text-[#edcfa1] text-sm leading-relaxed mb-8 max-w-[860px]">
               {h.howItWorks.subtitle}
             </p>
             <div className="grid md:grid-cols-2 gap-10 md:gap-16">
-              <div className="bg-[#121214] border border-[#2a2a2a] h-fit rounded-lg p-8">
+              <div className="bg-[#0f1a2b] border border-[#1a2942] h-fit rounded-lg p-8">
                 <div className="space-y-5 ">
                   {h.howItWorks.steps.map(step => (
                     <div key={step.num} className="flex gap-4">
-                      <div className="w-8 h-8 bg-[#c9a84c] rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                        <span className="text-black text-xs font-bold">
+                      <div className="w-8 h-8 bg-[#bf8b55] rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                        <span className="text-[#09101b] text-xs font-bold">
                           {step.num}
                         </span>
                       </div>
                       <div>
-                        <h3 className="text-[#F5E7B2] font-semibold text-sm mb-1">
+                        <h3 className="text-[#edcfa1] font-semibold text-sm mb-1">
                           {step.title}
                         </h3>
-                        <p className="text-[#B7A87A] text-xs leading-relaxed">
+                        <p className="text-[#edcfa1] text-xs leading-relaxed">
                           {step.desc}
                         </p>
                       </div>
                     </div>
                   ))}
                 </div>
-                <p className="mt-6 text-[#B7A87A] text-xs italic leading-relaxed border-t border-[#1e1e1e] pt-4">
+                <p className="mt-6 text-[#edcfa1] text-xs italic leading-relaxed border-t border-[#0f1a2b] pt-4">
                   {h.howItWorks.successFee}
                 </p>
               </div>
 
               {/* Contact channels */}
-              <div className="bg-[#121214] border border-[#2a2a2a] rounded-lg p-8">
+              <div className="bg-[#0f1a2b] border border-[#1a2942] rounded-lg p-8">
                 <p className="section-label">{h.contact.label}</p>
-                <h2 className="text-2xl md:text-3xl font-bold text-[#F5E7B2] mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#edcfa1] mb-4">
                   {h.contact.title}
                 </h2>
-                <p className="text-[#B7A87A] text-sm leading-relaxed mb-6">
+                <p className="text-[#edcfa1] text-sm leading-relaxed mb-6">
                   {h.contact.subtitle}
                 </p>
                 <div className="grid grid-cols-2 gap-3">
@@ -331,7 +331,7 @@ export default function HomePage() {
                     { ...h.contact.social, icon: "social" },
                   ].map(ch => (
                     <div key={ch.label} className="card">
-                      <div className="w-10 h-10 flex items-center justify-center mb-3 text-[#c9a84c]">
+                      <div className="w-10 h-10 flex items-center justify-center mb-3 text-[#bf8b55]">
                         {ch.icon === "whatsapp" && (
                           <svg
                             className="w-6 h-6"
@@ -414,13 +414,13 @@ export default function HomePage() {
                           </svg>
                         )}
                       </div>
-                      <p className="text-[#c9a84c] text-[10px] font-semibold tracking-widest uppercase mb-2">
+                      <p className="text-[#bf8b55] text-[10px] font-semibold tracking-widest uppercase mb-2">
                         {ch.label}
                       </p>
-                      <p className="text-[#B7A87A] text-xs leading-relaxed mb-2">
+                      <p className="text-[#edcfa1] text-xs leading-relaxed mb-2">
                         {ch.desc}
                       </p>
-                      <p className="text-[#F5E7B2] text-sm font-medium">
+                      <p className="text-[#edcfa1] text-sm font-medium">
                         {ch.value}
                       </p>
                     </div>

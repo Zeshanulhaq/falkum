@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Footer() {
   const { t } = useLang();
   return (
-    <footer className="bg-[#0d0d0d] border-t border-[#2a2a2a] py-10 px-4">
+    <footer className="bg-[#09101b] border-t border-[#1a2942] py-10 px-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-8">
         <div className="max-w-md">
           <Link href="/" className="flex items-center gap-2.5 mb-3">
@@ -17,12 +17,12 @@ export default function Footer() {
               height={96}
               className="w-36 h-auto object-contain"
             />
-            {/* <div className="w-8 h-8 bg-[#c9a84c] rounded-md flex items-center justify-center">
+            {/* <div className="w-8 h-8 bg-[#bf8b55] rounded-md flex items-center justify-center">
               <span className="text-black font-bold text-sm">F</span>
             </div>
-            <span className="text-[#F5E7B2] font-semibold text-lg">Falkum</span> */}
+            <span className="text-[#edcfa1] font-semibold text-lg">Falkum</span> */}
           </Link>
-          <p className="text-[#B7A87A] text-sm leading-relaxed">
+          <p className="text-[#edcfa1] text-sm leading-relaxed">
             {t.footer.tagline}
           </p>
         </div>
@@ -30,25 +30,25 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row gap-6 items-center">
             <Link
               href="/"
-              className="text-[#B7A87A] hover:text-[#c9a84c] text-sm transition-colors"
+              className="text-[#edcfa1] hover:text-[#bf8b55] text-sm transition-colors"
             >
               {t.nav.home}
             </Link>
             <Link
               href="/asset-types"
-              className="text-[#B7A87A] hover:text-[#c9a84c] text-sm transition-colors"
+              className="text-[#edcfa1] hover:text-[#bf8b55] text-sm transition-colors"
             >
               {t.nav.assetTypes}
             </Link>
             <Link
               href="/how-it-works"
-              className="text-[#B7A87A] hover:text-[#c9a84c] text-sm transition-colors"
+              className="text-[#edcfa1] hover:text-[#bf8b55] text-sm transition-colors"
             >
               {t.nav.howItWorks}
             </Link>
             <Link
               href="/contact"
-              className="text-[#B7A87A] hover:text-[#c9a84c] text-sm transition-colors"
+              className="text-[#edcfa1] hover:text-[#bf8b55] text-sm transition-colors"
             >
               {t.nav.contact}
             </Link>

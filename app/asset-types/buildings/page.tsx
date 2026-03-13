@@ -12,32 +12,32 @@ export default function BuildingsPage() {
   return (
     <>
       <section className="px-4 pt-12 pb-8 max-w-7xl mx-auto">
-        <nav className="text-xs text-[#B7A87A] mb-6">
+        <nav className="text-xs text-[#edcfa1] mb-6">
           <Link
             href="/asset-types"
-            className="hover:text-[#c9a84c] transition-colors"
+            className="hover:text-[#bf8b55] transition-colors"
           >
             {t.nav.assetTypes}
           </Link>
           <span className="mx-2">›</span>
-          <span className="text-[#B7A87A]">{b.breadcrumb}</span>
+          <span className="text-[#edcfa1]">{b.breadcrumb}</span>
         </nav>
         <p className="section-label">{b.label}</p>
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div>
-            <h1 className="text-3xl md:text-5xl font-bold text-[#c9a84c] mb-4 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#bf8b55] mb-4 leading-tight">
               {b.title}
             </h1>
-            <p className="text-[#B7A87A] text-sm leading-relaxed mb-6">
+            <p className="text-[#edcfa1] text-sm leading-relaxed mb-6">
               {b.subtitle}
             </p>
             <div className="grid grid-cols-2 gap-2 mb-6">
               {b.tags.map(tag => (
                 <div
                   key={tag}
-                  className="bg-[#141414] border border-[#2a2a2a] rounded-lg p-3"
+                  className="bg-[#0f1a2b] border border-[#1a2942] rounded-lg p-3"
                 >
-                  <p className="text-[#c9a84c] text-xs font-medium">{tag}</p>
+                  <p className="text-[#bf8b55] text-xs font-medium">{tag}</p>
                 </div>
               ))}
             </div>
@@ -56,22 +56,22 @@ export default function BuildingsPage() {
       </section>
 
       {/* Strategy */}
-      <section className="px-4 py-14 border-t border-[#1e1e1e]">
+      <section className="px-4 py-14 border-t border-[#0f1a2b]">
         <div className="max-w-7xl mx-auto">
           <p className="section-label">{b.strategy.label}</p>
-          <h2 className="text-2xl md:text-4xl font-bold text-[#F5E7B2] mb-4 max-w-2xl">
+          <h2 className="text-2xl md:text-4xl font-bold text-[#edcfa1] mb-4 max-w-2xl">
             {b.strategy.title}
           </h2>
-          <p className="text-[#B7A87A] text-sm leading-relaxed max-w-xl mb-10">
+          <p className="text-[#edcfa1] text-sm leading-relaxed max-w-xl mb-10">
             {b.strategy.desc}
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
             {b.assetTypes.map(at => (
               <div key={at.title} className="card">
-                <h3 className="text-[#F5E7B2] font-semibold mb-2">
+                <h3 className="text-[#edcfa1] font-semibold mb-2">
                   {at.title}
                 </h3>
-                <p className="text-[#B7A87A] text-sm leading-relaxed">
+                <p className="text-[#edcfa1] text-sm leading-relaxed">
                   {at.desc}
                 </p>
               </div>
@@ -81,7 +81,7 @@ export default function BuildingsPage() {
       </section>
 
       {/* Features */}
-      <section className="px-4 py-14 border-t border-[#1e1e1e]">
+      <section className="px-4 py-14 border-t border-[#0f1a2b]">
         <div className="max-w-7xl mx-auto grid sm:grid-cols-3 gap-6">
           {b.features.map((f, i) => {
             const icons = [
@@ -109,9 +109,9 @@ export default function BuildingsPage() {
             ];
             return (
               <div key={f.title}>
-                <div className="w-10 h-10 bg-[#141414] border border-[#2a2a2a] rounded-xl mb-4 flex items-center justify-center">
+                <div className="w-10 h-10 bg-[#0f1a2b] border border-[#1a2942] rounded-xl mb-4 flex items-center justify-center">
                   <svg
-                    className="w-5 h-5 text-[#c9a84c]"
+                    className="w-5 h-5 text-[#bf8b55]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -119,10 +119,10 @@ export default function BuildingsPage() {
                     {icons[i]}
                   </svg>
                 </div>
-                <h3 className="text-[#F5E7B2] font-semibold mb-2">
+                <h3 className="text-[#edcfa1] font-semibold mb-2">
                   {f.title}
                 </h3>
-                <p className="text-[#B7A87A] text-sm leading-relaxed">
+                <p className="text-[#edcfa1] text-sm leading-relaxed">
                   {f.desc}
                 </p>
               </div>

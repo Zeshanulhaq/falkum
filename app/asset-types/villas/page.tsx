@@ -13,21 +13,21 @@ export default function VillasPage() {
     <>
       {/* Header */}
       <section className="px-4 pt-12 pb-10 max-w-7xl mx-auto">
-        <nav className="text-xs text-[#B7A87A] mb-6">
+        <nav className="text-xs text-[#edcfa1] mb-6">
           <Link
             href="/asset-types"
-            className="hover:text-[#c9a84c] transition-colors"
+            className="hover:text-[#bf8b55] transition-colors"
           >
             {v.breadcrumb}
           </Link>
           <span className="mx-2">›</span>
-          <span className="text-[#B7A87A]">{v.title}</span>
+          <span className="text-[#edcfa1]">{v.title}</span>
         </nav>
         <p className="section-label">{v.label}</p>
-        <h1 className="text-3xl md:text-5xl font-bold text-[#c9a84c] mb-4 max-w-2xl leading-tight">
+        <h1 className="text-3xl md:text-5xl font-bold text-[#bf8b55] mb-4 max-w-2xl leading-tight">
           {v.title}
         </h1>
-        <p className="text-[#B7A87A] text-sm sm:text-base leading-relaxed max-w-xl">
+        <p className="text-[#edcfa1] text-sm sm:text-base leading-relaxed max-w-xl">
           {v.subtitle}
         </p>
       </section>
@@ -48,27 +48,27 @@ export default function VillasPage() {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-8">
             <div>
-              <h2 className="text-2xl font-bold text-[#F5E7B2] mb-4">
+              <h2 className="text-2xl font-bold text-[#edcfa1] mb-4">
                 {v.discreet.title}
               </h2>
-              <p className="text-[#B7A87A] text-sm leading-relaxed mb-3">
+              <p className="text-[#edcfa1] text-sm leading-relaxed mb-3">
                 {v.discreet.p1}
               </p>
-              <p className="text-[#B7A87A] text-sm leading-relaxed">
+              <p className="text-[#edcfa1] text-sm leading-relaxed">
                 {v.discreet.p2}
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-[#F5E7B2] mb-4">
+              <h2 className="text-2xl font-bold text-[#edcfa1] mb-4">
                 {v.assetTypesTitle}
               </h2>
               <div className="grid sm:grid-cols-2 gap-3">
                 {v.assets.map(asset => (
                   <div key={asset.title} className="card">
-                    <div className="w-8 h-8 bg-[#1e1e1e] border border-[#333] rounded-lg mb-3 flex items-center justify-center">
+                    <div className="w-8 h-8 bg-[#0f1a2b] border border-[#1a2942] rounded-lg mb-3 flex items-center justify-center">
                       <svg
-                        className="w-4 h-4 text-[#c9a84c]"
+                        className="w-4 h-4 text-[#bf8b55]"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -81,10 +81,10 @@ export default function VillasPage() {
                         />
                       </svg>
                     </div>
-                    <h3 className="text-[#F5E7B2] font-semibold text-sm mb-1">
+                    <h3 className="text-[#edcfa1] font-semibold text-sm mb-1">
                       {asset.title}
                     </h3>
-                    <p className="text-[#B7A87A] text-xs leading-relaxed">
+                    <p className="text-[#edcfa1] text-xs leading-relaxed">
                       {asset.desc}
                     </p>
                   </div>
@@ -93,10 +93,10 @@ export default function VillasPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-[#F5E7B2] mb-3">
+              <h2 className="text-2xl font-bold text-[#edcfa1] mb-3">
                 {v.network.title}
               </h2>
-              <p className="text-[#B7A87A] text-sm leading-relaxed">
+              <p className="text-[#edcfa1] text-sm leading-relaxed">
                 {v.network.desc}
               </p>
             </div>
@@ -104,11 +104,11 @@ export default function VillasPage() {
 
           {/* Sidebar */}
           <div>
-            <div className="bg-[#141414] border border-[#2a2a2a] rounded-2xl p-6 sticky top-24">
-              <h3 className="text-[#F5E7B2] font-bold text-lg mb-2">
+            <div className="bg-[#0f1a2b] border border-[#1a2942] rounded-2xl p-6 sticky top-24">
+              <h3 className="text-[#edcfa1] font-bold text-lg mb-2">
                 {v.sidebar.title}
               </h3>
-              <p className="text-[#B7A87A] text-sm leading-relaxed mb-5">
+              <p className="text-[#edcfa1] text-sm leading-relaxed mb-5">
                 {v.sidebar.desc}
               </p>
               <Link href="/contact" className="gold-btn block text-center mb-4">
@@ -118,10 +118,10 @@ export default function VillasPage() {
                 {v.sidebar.items.map(item => (
                     <li
                       key={item}
-                      className="flex items-center gap-2 text-[#B7A87A] text-xs"
+                      className="flex items-center gap-2 text-[#edcfa1] text-xs"
                     >
                     <svg
-                      className="w-4 h-4 text-[#c9a84c] shrink-0"
+                      className="w-4 h-4 text-[#bf8b55] shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"

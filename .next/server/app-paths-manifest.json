@@ -1,6 +1,6 @@
 {
   "/page": "app/page.js",
-  "/asset-types/page": "app/asset-types/page.js",
   "/how-it-works/page": "app/how-it-works/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/icon.png/route": "app/icon.png/route.js",
+  "/asset-types/page": "app/asset-types/page.js"
 }

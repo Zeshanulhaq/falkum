@@ -40,10 +40,10 @@ export default function AssetTypesPage() {
     <>
       <section className="px-4 py-14 md:py-20 max-w-4xl mx-auto text-center">
         <p className="section-label inline-block">{a.label}</p>
-        <h1 className="text-3xl md:text-5xl font-bold text-[#F5E7B2] mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold text-[#edcfa1] mb-4">
           {a.title}
         </h1>
-        <p className="text-[#B7A87A] text-sm sm:text-base leading-relaxed">
+        <p className="text-[#edcfa1] text-sm sm:text-base leading-relaxed">
           {a.subtitle}
         </p>
       </section>
@@ -103,17 +103,17 @@ export default function AssetTypesPage() {
 function AssetCard({ href, data }: { href: string; data: any }) {
   return (
     <div>
-      <span className="inline-block text-[10px] font-semibold tracking-widest uppercase bg-[#1e1e1e] text-[#c9a84c] border border-[#c9a84c]/20 px-3 py-1 rounded mb-4">
+      <span className="inline-block text-[10px] font-semibold tracking-widest uppercase bg-[#0f1a2b] text-[#bf8b55] border border-[#bf8b55]/20 px-3 py-1 rounded mb-4">
         {data.tag}
       </span>
-      <h2 className="text-2xl md:text-3xl font-bold text-[#F5E7B2] mb-3">
+      <h2 className="text-2xl md:text-3xl font-bold text-[#edcfa1] mb-3">
         {data.title}
       </h2>
-      <p className="text-[#B7A87A] text-sm leading-relaxed mb-5">{data.desc}</p>
+      <p className="text-[#edcfa1] text-sm leading-relaxed mb-5">{data.desc}</p>
       <div className="flex flex-wrap gap-2 mb-4">
-        <span className="flex items-center gap-1.5 text-xs text-[#B7A87A] bg-[#141414] border border-[#2a2a2a] px-3 py-1.5 rounded">
+        <span className="flex items-center gap-1.5 text-xs text-[#edcfa1] bg-[#0f1a2b] border border-[#1a2942] px-3 py-1.5 rounded">
           <svg
-            className="w-3.5 h-3.5 text-[#c9a84c]"
+            className="w-3.5 h-3.5 text-[#bf8b55]"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -127,9 +127,9 @@ function AssetCard({ href, data }: { href: string; data: any }) {
           </svg>
           {data.tag1}
         </span>
-        <span className="flex items-center gap-1.5 text-xs text-[#B7A87A] bg-[#141414] border border-[#2a2a2a] px-3 py-1.5 rounded">
+        <span className="flex items-center gap-1.5 text-xs text-[#edcfa1] bg-[#0f1a2b] border border-[#1a2942] px-3 py-1.5 rounded">
           <svg
-            className="w-3.5 h-3.5 text-[#c9a84c]"
+            className="w-3.5 h-3.5 text-[#bf8b55]"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -144,7 +144,7 @@ function AssetCard({ href, data }: { href: string; data: any }) {
           {data.tag2}
         </span>
       </div>
-      <p className="text-[#B7A87A] text-xs mb-5">{data.subtypes}</p>
+      <p className="text-[#edcfa1] text-xs mb-5">{data.subtypes}</p>
       <Link href={href} className="outline-btn inline-block">
         {data.cta}
       </Link>

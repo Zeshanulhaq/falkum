@@ -53,10 +53,10 @@ export default function ContactPage() {
     <>
       <section className="px-4 pt-14 pb-12 max-w-4xl mx-auto text-center">
         <p className="section-label inline-block">{c.label}</p>
-        <h1 className="text-3xl md:text-5xl font-bold text-[#F5E7B2] mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold text-[#edcfa1] mb-4">
           {c.title}
         </h1>
-        <p className="text-[#B7A87A] text-sm sm:text-base leading-relaxed">
+        <p className="text-[#edcfa1] text-sm sm:text-base leading-relaxed">
           {c.subtitle}
         </p>
       </section>
@@ -67,11 +67,11 @@ export default function ContactPage() {
           {c.channels.map((ch, i) => (
             <div
               key={ch.title}
-              className="bg-[#141414] border border-[#2a2a2a] hover:border-[#c9a84c]/30 transition-colors rounded-2xl p-6"
+              className="bg-[#0f1a2b] border border-[#1a2942] hover:border-[#bf8b55]/30 transition-colors rounded-2xl p-6"
             >
-              <div className="w-10 h-10 border border-[#333] rounded-xl mb-4 flex items-center justify-center">
+              <div className="w-10 h-10 border border-[#1a2942] rounded-xl mb-4 flex items-center justify-center">
                 <svg
-                  className="w-5 h-5 text-[#c9a84c]"
+                  className="w-5 h-5 text-[#bf8b55]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -79,11 +79,11 @@ export default function ContactPage() {
                   {icons[i]}
                 </svg>
               </div>
-              <h3 className="text-[#F5E7B2] font-semibold mb-2">{ch.title}</h3>
-              <p className="text-[#B7A87A] text-sm leading-relaxed mb-4">
+              <h3 className="text-[#edcfa1] font-semibold mb-2">{ch.title}</h3>
+              <p className="text-[#edcfa1] text-sm leading-relaxed mb-4">
                 {ch.desc}
               </p>
-              <p className="text-[#c9a84c] text-sm font-medium flex items-center gap-1">
+              <p className="text-[#bf8b55] text-sm font-medium flex items-center gap-1">
                 {ch.value}
                 <svg
                   className="w-3.5 h-3.5"
@@ -106,12 +106,12 @@ export default function ContactPage() {
 
       {/* Form */}
       <section className="px-4 pb-20 max-w-2xl mx-auto">
-        <div className="bg-[#141414] border border-[#2a2a2a] rounded-2xl p-6 md:p-8">
+        <div className="bg-[#0f1a2b] border border-[#1a2942] rounded-2xl p-6 md:p-8">
           {submitted ? (
             <div className="text-center py-8">
-              <div className="w-16 h-16 bg-[#c9a84c]/10 border border-[#c9a84c]/30 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <div className="w-16 h-16 bg-[#bf8b55]/10 border border-[#bf8b55]/30 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <svg
-                  className="w-8 h-8 text-[#c9a84c]"
+                  className="w-8 h-8 text-[#bf8b55]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -124,21 +124,21 @@ export default function ContactPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-[#F5E7B2] font-bold text-xl mb-2">
+              <h3 className="text-[#edcfa1] font-bold text-xl mb-2">
                 {c.success.title}
               </h3>
-              <p className="text-[#B7A87A] text-sm">{c.success.message}</p>
+              <p className="text-[#edcfa1] text-sm">{c.success.message}</p>
             </div>
           ) : (
             <>
-              <h2 className="text-[#F5E7B2] font-bold text-xl mb-1">
+              <h2 className="text-[#edcfa1] font-bold text-xl mb-1">
                 {c.form.title}
               </h2>
-              <p className="text-[#B7A87A] text-sm mb-6">{c.form.subtitle}</p>
+              <p className="text-[#edcfa1] text-sm mb-6">{c.form.subtitle}</p>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-[#F5E7B2] text-xs mb-1.5">
+                    <label className="block text-[#edcfa1] text-xs mb-1.5">
                       {c.form.fullName}
                     </label>
                     <input
@@ -148,11 +148,11 @@ export default function ContactPage() {
                       onChange={e =>
                         setForm({ ...form, fullName: e.target.value })
                       }
-                      className="w-full bg-[#0d0d0d] border border-[#333] rounded-lg px-4 py-3 text-[#F5E7B2] text-sm placeholder:text-[#444] focus:outline-none focus:border-[#c9a84c]/50"
+                      className="w-full bg-[#09101b] border border-[#1a2942] rounded-lg px-4 py-3 text-[#edcfa1] text-sm placeholder:text-[#8f7e64] focus:outline-none focus:border-[#bf8b55]/50"
                     />
                   </div>
                   <div>
-                    <label className="block text-[#F5E7B2] text-xs mb-1.5">
+                    <label className="block text-[#edcfa1] text-xs mb-1.5">
                       {c.form.phone}
                     </label>
                     <input
@@ -162,12 +162,12 @@ export default function ContactPage() {
                       onChange={e =>
                         setForm({ ...form, phone: e.target.value })
                       }
-                      className="w-full bg-[#0d0d0d] border border-[#333] rounded-lg px-4 py-3 text-[#F5E7B2] text-sm placeholder:text-[#444] focus:outline-none focus:border-[#c9a84c]/50"
+                      className="w-full bg-[#09101b] border border-[#1a2942] rounded-lg px-4 py-3 text-[#edcfa1] text-sm placeholder:text-[#8f7e64] focus:outline-none focus:border-[#bf8b55]/50"
                     />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-[#F5E7B2] text-xs mb-1.5">
+                  <label className="block text-[#edcfa1] text-xs mb-1.5">
                     {c.form.assetType}
                   </label>
                   <select
@@ -175,7 +175,7 @@ export default function ContactPage() {
                     onChange={e =>
                       setForm({ ...form, assetType: e.target.value })
                     }
-                    className="w-full bg-[#0d0d0d] border border-[#333] rounded-lg px-4 py-3 text-sm text-[#F5E7B2] focus:outline-none focus:border-[#c9a84c]/50"
+                    className="w-full bg-[#09101b] border border-[#1a2942] rounded-lg px-4 py-3 text-sm text-[#edcfa1] focus:outline-none focus:border-[#bf8b55]/50"
                   >
                     <option value="">{c.form.assetTypePlaceholder}</option>
                     {c.form.assetOptions.map(opt => (
@@ -186,7 +186,7 @@ export default function ContactPage() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-[#F5E7B2] text-xs mb-1.5">
+                  <label className="block text-[#edcfa1] text-xs mb-1.5">
                     {c.form.message}
                   </label>
                   <textarea
@@ -196,12 +196,12 @@ export default function ContactPage() {
                     onChange={e =>
                       setForm({ ...form, message: e.target.value })
                     }
-                    className="w-full bg-[#0d0d0d] border border-[#333] rounded-lg px-4 py-3 text-[#F5E7B2] text-sm placeholder:text-[#444] focus:outline-none focus:border-[#c9a84c]/50 resize-none"
+                    className="w-full bg-[#09101b] border border-[#1a2942] rounded-lg px-4 py-3 text-[#edcfa1] text-sm placeholder:text-[#8f7e64] focus:outline-none focus:border-[#bf8b55]/50 resize-none"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-[#c9a84c] hover:bg-[#b8963e] text-black font-medium py-3.5 rounded-lg transition-colors text-sm"
+                  className="w-full bg-[#bf8b55] hover:bg-[#8f7e64] text-[#09101b] font-medium py-3.5 rounded-lg transition-colors text-sm"
                 >
                   {c.form.submit}
                 </button>

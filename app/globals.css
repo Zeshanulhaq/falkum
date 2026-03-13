@@ -1,45 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Almarai:wght@400;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Noto Sans Arabic – local font for Arabic UI */
-@font-face {
-  font-family: "Noto Sans Arabic";
-  src: url("/fonts/noto-sans-arabic/NotoSansArabic-Regular.ttf")
-    format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Noto Sans Arabic";
-  src: url("/fonts/noto-sans-arabic/NotoSansArabic-Medium.ttf")
-    format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Noto Sans Arabic";
-  src: url("/fonts/noto-sans-arabic/NotoSansArabic-SemiBold.ttf")
-    format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Noto Sans Arabic";
-  src: url("/fonts/noto-sans-arabic/NotoSansArabic-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 :root {
-  --gold: #c9a84c;
-  --gold-dark: #b8963e;
-  --bg: #0d0d0d;
-  --surface: #141414;
-  --border: #2a2a2a;
+  --font-stix: "STIX Two Text", serif;
+  --font-almarai: "Almarai", sans-serif;
+  --gold: #bf8b55;
+  --gold-dark: #8f7e64;
+  --gold-light: #fee6a2;
+  --bg: #09101b;
+  --surface: #0f1a2b;
+  --border: #1a2942;
+  --beige: #edcfa1;
 }
 
 * {
@@ -51,23 +25,23 @@
 html,
 body {
   background: var(--bg);
-  color: white;
+  color: var(--beige);
 }
 body {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: var(--font-stix), "STIX Two Text", serif;
 }
 
 [dir="rtl"] body,
 [dir="rtl"] * {
-  font-family: "Noto Sans Arabic", Verdana, sans-serif;
+  font-family: var(--font-almarai), "Almarai", sans-serif;
 }
 
 .font-arabic {
-  font-family: "Noto Sans Arabic", Verdana, sans-serif;
+  font-family: var(--font-almarai), "Almarai", sans-serif;
 }
 
 .section-label {
-  @apply text-[#E2C46E] text-xs font-normal tracking-widest uppercase mb-3;
+  @apply text-[#edcfa1] text-xs font-normal tracking-widest uppercase mb-3;
 }
 
 .section-label-line {
@@ -76,28 +50,28 @@ body {
 
 .section-label-line::after {
   content: "";
-  @apply block w-8 h-0.5 bg-[#c9a84c];
+  @apply block w-8 h-0.5 bg-[#bf8b55];
 }
 
 .gold-btn {
-  @apply bg-[#c9a84c] hover:bg-[#b8963e] text-black text-sm font-normal px-6 py-3 rounded transition-colors;
+  @apply bg-[#bf8b55] hover:bg-[#8f7e64] text-[#09101b] text-sm font-normal px-6 py-3 rounded transition-colors;
 }
 
 .outline-btn {
-  @apply border border-[#ffffff1f] text-[#F5E7B2]   text-sm font-normal bg-[#141416] px-6 py-3 rounded transition-colors;
+  @apply border border-[#ffffff1f] text-[#edcfa1] text-sm font-normal bg-[#0f1a2b] px-6 py-3 rounded transition-colors;
 }
 
 .card {
-  @apply bg-[#141414] border border-[#2a2a2a] rounded-xl p-6;
+  @apply bg-[#0f1a2b] border border-[#1a2942] rounded-xl p-6;
 }
 
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0d0d0d;
+  background: #09101b;
 }
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #0f1a2b;
   border-radius: 3px;
 }

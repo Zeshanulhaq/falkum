@@ -12,7 +12,7 @@ export default function HospitalsPage() {
   return (
     <>
       <section className="px-4 pt-12 pb-10 max-w-7xl mx-auto">
-        <span className="inline-flex items-center gap-2 text-xs text-[#c9a84c] bg-[#1a1a1a] border border-[#c9a84c]/20 px-3 py-1.5 rounded-full mb-6">
+        <span className="inline-flex items-center gap-2 text-xs text-[#bf8b55] bg-[#0f1a2b] border border-[#bf8b55]/20 px-3 py-1.5 rounded-full mb-6">
           <svg
             className="w-3.5 h-3.5"
             fill="none"
@@ -28,10 +28,10 @@ export default function HospitalsPage() {
           </svg>
           {h.label}
         </span>
-        <h1 className="text-3xl md:text-5xl font-bold text-[#c9a84c] mb-4 leading-tight max-w-2xl">
+        <h1 className="text-3xl md:text-5xl font-bold text-[#bf8b55] mb-4 leading-tight max-w-2xl">
           {h.title}
         </h1>
-        <p className="text-[#B7A87A] text-sm sm:text-base leading-relaxed max-w-2xl">
+        <p className="text-[#edcfa1] text-sm sm:text-base leading-relaxed max-w-2xl">
           {h.subtitle}
         </p>
       </section>
@@ -41,9 +41,9 @@ export default function HospitalsPage() {
         <div className="grid sm:grid-cols-3 gap-5">
           {h.features.map(f => (
             <div key={f.title} className="card">
-              <div className="w-10 h-10 bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl mb-4 flex items-center justify-center">
+              <div className="w-10 h-10 bg-[#0f1a2b] border border-[#1a2942] rounded-xl mb-4 flex items-center justify-center">
                 <svg
-                  className="w-5 h-5 text-[#c9a84c]"
+                  className="w-5 h-5 text-[#bf8b55]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -56,10 +56,10 @@ export default function HospitalsPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-[#F5E7B2] font-semibold mb-2">
+              <h3 className="text-[#edcfa1] font-semibold mb-2">
                 {f.title}
               </h3>
-              <p className="text-[#B7A87A] text-sm leading-relaxed">
+              <p className="text-[#edcfa1] text-sm leading-relaxed">
                 {f.desc}
               </p>
             </div>
@@ -68,21 +68,21 @@ export default function HospitalsPage() {
       </section>
 
       {/* Asset Focus */}
-      <section className="px-4 py-14 border-t border-[#1e1e1e]">
+      <section className="px-4 py-14 border-t border-[#0f1a2b]">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <div>
             <p className="section-label">{h.assetFocus.label}</p>
-            <h2 className="text-2xl md:text-4xl font-bold text-[#F5E7B2] mb-4">
+            <h2 className="text-2xl md:text-4xl font-bold text-[#edcfa1] mb-4">
               {h.assetFocus.title}
             </h2>
-            <p className="text-[#B7A87A] text-sm leading-relaxed mb-6">
+            <p className="text-[#edcfa1] text-sm leading-relaxed mb-6">
               {h.assetFocus.desc}
             </p>
             <ul className="space-y-4">
               {h.assetFocus.items.map(item => (
                 <li key={item.title} className="flex gap-3">
                   <svg
-                    className="w-5 h-5 text-[#c9a84c] shrink-0 mt-0.5"
+                    className="w-5 h-5 text-[#bf8b55] shrink-0 mt-0.5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -95,10 +95,10 @@ export default function HospitalsPage() {
                     />
                   </svg>
                   <div>
-                    <p className="text-[#F5E7B2] font-semibold text-sm">
+                    <p className="text-[#edcfa1] font-semibold text-sm">
                       {item.title}
                     </p>
-                    <p className="text-[#B7A87A] text-xs leading-relaxed">
+                    <p className="text-[#edcfa1] text-xs leading-relaxed">
                       {item.desc}
                     </p>
                   </div>

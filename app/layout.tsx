@@ -20,7 +20,7 @@ export default function RootLayout({
       <body>
         <LanguageProvider>
           <Navbar />
-          <main className="pt-16 min-h-screen bg-[#0d0d0d] text-[#F5E7B2]">
+          <main className="pt-16 min-h-screen bg-[#09101b] text-[#edcfa1]">
             {children}
           </main>
           <Footer />
