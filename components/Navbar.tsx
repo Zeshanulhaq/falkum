@@ -13,13 +13,18 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 shrink-0">
-            <div className="w-8 h-8 bg-[#c9a84c] rounded-md flex items-center justify-center">
-              <Image src="/logo.svg" alt="Falkum" width={20} height={20} />
-            </div>
-            <span className="text-[#F5E7B2] font-semibold text-[24px] tracking-tight">
+          <Link href="/" className="flex items-center gap-2.5 shrink-0 mt-5">
+            {/* <div className="w-8 h-8 bg-[#c9a84c] rounded-md flex items-center justify-center"> */}
+            <Image
+              src="/Falkum logo.png"
+              alt="Falkum"
+              width={150}
+              height={200}
+            />
+            {/* </div> */}
+            {/* <span className="text-[#F5E7B2] font-semibold text-[24px] tracking-tight">
               Falkum
-            </span>
+            </span> */}
           </Link>
 
           {/* Desktop Nav */}
@@ -71,7 +76,7 @@ export default function Navbar() {
             {/* Mobile menu btn */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="md:hidden text-white p-1"
+              className="md:hidden text-[#F5E7B2] p-1"
               aria-label="Menu"
             >
               <svg
@@ -132,17 +137,17 @@ export default function Navbar() {
           >
             {t.nav.contact}
           </Link>
-          <div className="flex items-center gap-3 pt-2 border-t border-[#2a2a2a]">
+          <div className="flex flex-col items-center gap-3 pt-2 border-t border-[#2a2a2a]">
             <button
               onClick={() => setLang(lang === "en" ? "ar" : "en")}
-              className="text-xs text-[#aaa] hover:text-[#c9a84c] border border-[#333] rounded px-3 py-2"
+              className="text-xs text-[#aaa] w-full hover:text-[#c9a84c] border border-[#333] rounded px-3 py-2"
             >
               {lang === "en" ? "عربي" : "EN"}
             </button>
             <Link
               href="/list-property"
               onClick={() => setMenuOpen(false)}
-              className="flex-1 text-center bg-[#c9a84c] hover:bg-[#b8963e] text-black text-sm font-semibold px-4 py-2 rounded transition-colors"
+              className="flex-1 text-center bg-[#c9a84c] hover:bg-[#b8963e] text-black text-sm font-medium px-4 py-2 w-full rounded transition-colors"
             >
               {t.nav.listProperty}
             </Link>
