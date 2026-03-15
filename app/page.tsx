@@ -15,6 +15,25 @@ export default function HomePage() {
       <section className="px-4 py-16 md:py-24 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
+            <div className="inline-flex items-center gap-2 bg-[#0f1a2b] border border-[#1a2942] rounded-lg px-4 py-2 mb-4">
+              <svg
+                className="w-4 h-4 text-[#edcfa1] shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                />
+              </svg>
+              <span className="text-[#edcfa1] text-sm">
+                {h.hero.trustBadge}
+              </span>
+            </div>
+            <div className="mt-2 w-20 h-0.5 bg-[#edcfa1] mb-6" />
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#edcfa1] leading-tight mb-6">
               {h.hero.title}
             </h1>
@@ -330,7 +349,19 @@ export default function HomePage() {
                     { ...h.contact.unified, icon: "phone" },
                     { ...h.contact.social, icon: "social" },
                   ].map(ch => (
-                    <div key={ch.label} className="card">
+                    <a
+                      key={ch.label}
+                      href={ch.href}
+                      target={
+                        ch.href?.startsWith("http") ? "_blank" : undefined
+                      }
+                      rel={
+                        ch.href?.startsWith("http")
+                          ? "noopener noreferrer"
+                          : undefined
+                      }
+                      className="card block group hover:border-[#bf8b55]/40 transition-colors"
+                    >
                       <div className="w-10 h-10 flex items-center justify-center mb-3 text-[#bf8b55]">
                         {ch.icon === "whatsapp" && (
                           <svg
@@ -420,10 +451,23 @@ export default function HomePage() {
                       <p className="text-[#edcfa1] text-xs leading-relaxed mb-2">
                         {ch.desc}
                       </p>
-                      <p className="text-[#edcfa1] text-sm font-medium">
-                        {ch.value}
+                      <p className="text-[#bf8b55] text-sm font-medium flex items-center gap-1 group-hover:text-[#fee6a2] transition-colors">
+                        <span dir="ltr">{ch.value}</span>
+                        <svg
+                          className="w-3.5 h-3.5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 5l7 7-7 7"
+                          />
+                        </svg>
                       </p>
-                    </div>
+                    </a>
                   ))}
                 </div>
               </div>

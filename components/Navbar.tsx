@@ -57,21 +57,36 @@ export default function Navbar() {
 
           {/* Right side */}
           <div className="flex items-center gap-3">
-            {/* Language Toggle */}
-            <button
-              onClick={() => setLang(lang === "en" ? "ar" : "en")}
-              className="hidden md:flex items-center gap-1 text-xs text-[#8f7e64] hover:text-[#bf8b55] transition-colors border border-[#1a2942] rounded px-2.5 py-1.5"
-            >
-              {lang === "en" ? "عربي" : "EN"}
-            </button>
-
+            {/* Language Toggle - Pill style */}
+            <div className="hidden md:flex items-center bg-[#1a1a1a] border border-[#333] rounded-lg p-0.5">
+              <button
+                onClick={() => setLang("en")}
+                className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-colors ${
+                  lang === "en"
+                    ? "bg-[#bf8b55] text-black"
+                    : "text-[#888] hover:text-white"
+                }`}
+              >
+                EN
+              </button>
+              <button
+                onClick={() => setLang("ar")}
+                className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-colors ${
+                  lang === "ar"
+                    ? "bg-[#bf8b55] text-black"
+                    : "text-[#888] hover:text-white"
+                }`}
+              >
+                AR
+              </button>
+            </div>
             {/* CTA */}
-            <Link
+            {/* <Link
               href="/list-property"
               className="hidden md:block bg-[#bf8b55] hover:bg-[#8f7e64] text-[#09101b] text-sm font-normal px-4 py-2 rounded transition-colors"
             >
               {t.nav.listProperty}
-            </Link>
+            </Link> */}
 
             {/* Mobile menu btn */}
             <button
@@ -138,19 +153,35 @@ export default function Navbar() {
             {t.nav.contact}
           </Link>
           <div className="flex flex-col items-center gap-3 pt-2 border-t border-[#1a2942]">
-            <button
-              onClick={() => setLang(lang === "en" ? "ar" : "en")}
-              className="text-xs text-[#8f7e64] w-full hover:text-[#bf8b55] border border-[#1a2942] rounded px-3 py-2"
-            >
-              {lang === "en" ? "عربي" : "EN"}
-            </button>
-            <Link
+            <div className="flex items-center bg-[#1a1a1a] border border-[#333] rounded-lg p-0.5 w-[100px]">
+              <button
+                onClick={() => setLang("en")}
+                className={`flex-1 py-2 text-xs font-semibold rounded-md transition-colors ${
+                  lang === "en"
+                    ? "bg-[#bf8b55] text-black"
+                    : "text-[#888] hover:text-white"
+                }`}
+              >
+                EN
+              </button>
+              <button
+                onClick={() => setLang("ar")}
+                className={`flex-1 py-2 text-xs font-semibold rounded-md transition-colors ${
+                  lang === "ar"
+                    ? "bg-[#bf8b55] text-black"
+                    : "text-[#888] hover:text-white"
+                }`}
+              >
+                AR
+              </button>
+            </div>
+            {/* <Link
               href="/list-property"
               onClick={() => setMenuOpen(false)}
               className="flex-1 text-center bg-[#bf8b55] hover:bg-[#8f7e64] text-[#09101b] text-sm font-medium px-4 py-2 w-full rounded transition-colors"
             >
               {t.nav.listProperty}
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}

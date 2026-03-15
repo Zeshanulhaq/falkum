@@ -9,7 +9,9 @@ export const translations = {
     },
     home: {
       hero: {
-        title: "Connecting serious buyers with residential and commercial property sellers",
+        trustBadge: "Trusted property brokerage platform in Saudi Arabia",
+        title:
+          "Connecting serious buyers with residential and commercial property sellers",
         subtitle:
           "Falkum is a selling platform for residential and commercial assets such as hotels, hospitals, buildings, villas, and investment properties. We manage buyer sourcing, negotiations, and legal documentation with commission charged only upon successful deal closure.",
         cta: "Contact Falkum",
@@ -17,17 +19,22 @@ export const translations = {
       },
       heroTags: {
         buyerSourcing: "BUYER SOURCING",
-        buyerSourcingDesc: "Targeted outreach to qualified local and international buyers for premium transactions.",
+        buyerSourcingDesc:
+          "Targeted outreach to qualified local and international buyers for premium transactions.",
         negotiation: "NEGOTIATION SUPPORT",
-        negotiationDesc: "Dedicated negotiation management designed for high-value private and institutional assets.",
+        negotiationDesc:
+          "Dedicated negotiation management designed for high-value private and institutional assets.",
         legal: "LEGAL DOCUMENTATION",
-        legalDesc: "Clear transaction coordination and documentation support through the closing stage.",
+        legalDesc:
+          "Clear transaction coordination and documentation support through the closing stage.",
       },
       assetTypes: {
         residential: "Residential",
-        residentialDesc: "Villas, compounds, apartment buildings, and private residences",
+        residentialDesc:
+          "Villas, compounds, apartment buildings, and private residences",
         commercial: "Commercial",
-        commercialDesc: "Hotels, hospitals, office buildings, and specialized assets",
+        commercialDesc:
+          "Hotels, hospitals, office buildings, and specialized assets",
       },
       trust: {
         label: "WHY CHOOSE FALKUM",
@@ -37,11 +44,17 @@ export const translations = {
         forSellers: "Trust for sellers",
         forSellersDesc:
           "Sellers work through a controlled sales practice with better confidentiality, qualified buyer introductions, and representation focused on protecting their equity.",
-        forSellersItems: ["Confidential buyer communication", "Seller-first negotiation support"],
+        forSellersItems: [
+          "Confidential buyer communication",
+          "Seller-first negotiation support",
+        ],
         forBuyers: "Confidence for buyers",
         forBuyersDesc:
           "Qualified buyers and investors get access to structured opportunities with clearer communication, faster coordination, and direct serious transaction handling.",
-        forBuyersItems: ["Curated asset introductions", "Documentation coordination"],
+        forBuyersItems: [
+          "Curated asset introductions",
+          "Documentation coordination",
+        ],
         aligned: "Aligned incentives",
         alignedDesc:
           "Because Falkum earns on successful closure, the process stays focused on serious matches, clear negotiations, and progressing the transaction to completion.",
@@ -50,10 +63,26 @@ export const translations = {
       trustSummary:
         "Falkum combines rigorous buyer qualification, financial framing, and outcome-driven execution so both sellers and serious buyers benefit from a single, aligned transaction partner.",
       stats: {
-        hours: { value: "24h", label: "Target initial response window for new seller and buyer inquiries." },
-        confidential: { value: "100%", label: "Confidential handling for private documents and sensitive asset information." },
-        point: { value: "1 point", label: "Single transaction partner coordinating sourcing, negotiation, and documentation." },
-        upfront: { value: "0 upfront", label: "Commission is only charged after a transaction closes successfully." },
+        hours: {
+          value: "24h",
+          label:
+            "Target initial response window for new seller and buyer inquiries.",
+        },
+        confidential: {
+          value: "100%",
+          label:
+            "Confidential handling for private documents and sensitive asset information.",
+        },
+        point: {
+          value: "1 point",
+          label:
+            "Single transaction partner coordinating sourcing, negotiation, and documentation.",
+        },
+        upfront: {
+          value: "0 upfront",
+          label:
+            "Commission is only charged after a transaction closes successfully.",
+        },
       },
       assetCategories: {
         label: "ASSET CATEGORIES",
@@ -62,10 +91,34 @@ export const translations = {
           "Falkum supports sellers across multiple asset classes, with tailored positioning for different buyer profiles and transaction sizes.",
         cta: "Start a confidential discussion",
         viewDetails: "View details",
-        villas: { title: "Villas and residences", desc: "Private homes, luxury villas, compounds, and estates. Targeted at individual and family buyers.", tag1: "Private homes", tag2: "Major KSA cities", badge: "Residential" },
-        buildings: { title: "Buildings and income assets", desc: "Apartment buildings, mixed use developments, and leased assets. Income-generating assets marketed better.", tag1: "Buildings", tag2: "Well-driven assets", badge: "Investment" },
-        hotels: { title: "Hotels and hospitality", desc: "Hospitality assets handled with discreet marketing and investor-oriented presentation to attract serious acquisition conversations.", tag1: "Hotels", tag2: "Institutional tenants", badge: "Commercial" },
-        hospitals: { title: "Hospitals and specialized assets", desc: "Complex institutional and commercial properties supported through buyer matching, documentation, and acquisition close coordination.", tag1: "Hospitals", tag2: "Due diligence support", badge: "Specialized" },
+        villas: {
+          title: "Villas and residences",
+          desc: "Private homes, luxury villas, compounds, and estates. Targeted at individual and family buyers.",
+          tag1: "Private homes",
+          tag2: "Major KSA cities",
+          badge: "Residential",
+        },
+        buildings: {
+          title: "Buildings and income assets",
+          desc: "Apartment buildings, mixed use developments, and leased assets. Income-generating assets marketed better.",
+          tag1: "Buildings",
+          tag2: "Well-driven assets",
+          badge: "Investment",
+        },
+        hotels: {
+          title: "Hotels and hospitality",
+          desc: "Hospitality assets handled with discreet marketing and investor-oriented presentation to attract serious acquisition conversations.",
+          tag1: "Hotels",
+          tag2: "Institutional tenants",
+          badge: "Commercial",
+        },
+        hospitals: {
+          title: "Hospitals and specialized assets",
+          desc: "Complex institutional and commercial properties supported through buyer matching, documentation, and acquisition close coordination.",
+          tag1: "Hospitals",
+          tag2: "Due diligence support",
+          badge: "Specialized",
+        },
       },
       howItWorks: {
         label: "HOW IT WORKS",
@@ -73,27 +126,66 @@ export const translations = {
         subtitle:
           "The platform is structured around seller representation rather than public property search. The focus is on discreet marketing, qualified buyer conversations, and deal compilation.",
         steps: [
-          { num: "1", title: "Property review", desc: "Falkum reviews the asset category, sale goals, and recommended readiness before preparing a tailored sales approach." },
-          { num: "2", title: "Buyer sourcing", desc: "Qualified buyers and investors are approached based on the property type, value, and the buyer profile." },
-          { num: "3", title: "Negotiation and alignment", desc: "Offer management, discussion handling, and expectation alignment are coordinated to move serious deals forward." },
-          { num: "4", title: "Documentation and closing", desc: "Transaction paperwork and legal documentation support continue through the final stages until deal completion." },
+          {
+            num: "1",
+            title: "Property review",
+            desc: "Falkum reviews the asset category, sale goals, and recommended readiness before preparing a tailored sales approach.",
+          },
+          {
+            num: "2",
+            title: "Buyer sourcing",
+            desc: "Qualified buyers and investors are approached based on the property type, value, and the buyer profile.",
+          },
+          {
+            num: "3",
+            title: "Negotiation and alignment",
+            desc: "Offer management, discussion handling, and expectation alignment are coordinated to move serious deals forward.",
+          },
+          {
+            num: "4",
+            title: "Documentation and closing",
+            desc: "Transaction paperwork and legal documentation support continue through the final stages until deal completion.",
+          },
         ],
-        successFee: "A success fee is charged only upon successful deal closure, aligning Falkum's outcome with the seller's outcome from the beginning.",
+        successFee:
+          "A success fee is charged only upon successful deal closure, aligning Falkum's outcome with the seller's outcome from the beginning.",
       },
       contact: {
         label: "CONTACT PAGE",
         title: "Reach Falkum through the channels available from day one",
         subtitle:
           "Initially, clients can contact the team through WhatsApp, email, social media, or a unified number. This section acts as the first contact page experience on the landing site.",
-        whatsapp: { label: "WhatsApp", desc: "Start fast conversations for seller onboarding, buyer matching, and initial property discussions.", value: "+966 50 123 4567" },
-        email: { label: "Email", desc: "Share property details, asset summaries, and documentation requests in a structured written channel.", value: "info@falkum.sa" },
-        unified: { label: "Unified number", desc: "A central line for seller inquiries, investor requests, and coordination with the Falkum team.", value: "9200 12345" },
-        social: { label: "Social media", desc: "Maintain brand presence, answer general inquiries, and route serious prospects into direct conversation.", value: "@falkum.sa" },
+        whatsapp: {
+          label: "WhatsApp",
+          desc: "Start fast conversations for seller onboarding, buyer matching, and initial property discussions.",
+          value: "+966 50 123 4567",
+          href: "https://wa.me/966501234567",
+        },
+        email: {
+          label: "Email",
+          desc: "Share property details, asset summaries, and documentation requests in a structured written channel.",
+          value: "info@falkum.sa",
+          href: "mailto:info@falkum.sa",
+        },
+        unified: {
+          label: "Unified number",
+          desc: "A central line for seller inquiries, investor requests, and coordination with the Falkum team.",
+          value: "9200 12345",
+          href: "tel:920012345",
+        },
+        social: {
+          label: "Social media",
+          desc: "Maintain brand presence, answer general inquiries, and route serious prospects into direct conversation.",
+          value: "@falkum.sa",
+          href: "https://instagram.com/falkum.sa",
+        },
       },
       cta: {
         label: "SELLER FIRST PLATFORM",
-        title: "Ready to sell a hotel, hospital, building, villa, or investment property?",
-        subtitle: "Start with a direct conversation and let Falkum handle buyer sourcing, negotiations, and the path to closing.",
+        title:
+          "Ready to sell a hotel, hospital, building, villa, or investment property?",
+        subtitle:
+          "Start with a direct conversation and let Falkum handle buyer sourcing, negotiations, and the path to closing.",
         btn: "Contact the Falkum team",
       },
     },
@@ -108,7 +200,8 @@ export const translations = {
         desc: "We handle the sale of luxury villas, private estates, and exclusive residential compounds. These properties require targeted marketing to high-net-worth individuals and families seeking premium living spaces or private holdings.",
         tag1: "HNWI buyer matching",
         tag2: "Discreet property viewing",
-        subtypes: "Private Villas  •  Palaces & Estates  •  Residential Compounds",
+        subtypes:
+          "Private Villas  •  Palaces & Estates  •  Residential Compounds",
         cta: "Discuss residential sale",
       },
       buildings: {
@@ -117,7 +210,8 @@ export const translations = {
         desc: "Designed for owners of apartment buildings, mixed-use developments, and leased assets. We frame these properties around their financial performance, yield, and long-term value to attract yield-driven investors and corporate buyers.",
         tag1: "Yield-focused marketing",
         tag2: "Financial documentation support",
-        subtypes: "Apartment Buildings  •  Mixed-Use Retail  •  Income-Generating Plots",
+        subtypes:
+          "Apartment Buildings  •  Mixed-Use Retail  •  Income-Generating Plots",
         cta: "Discuss investment sale",
       },
       hotels: {
@@ -126,7 +220,8 @@ export const translations = {
         desc: "Hospitality properties require highly specialized representation. Falkum works directly with institutional investors, hospitality groups, and large-scale buyers to facilitate the acquisition of operational hotels, resorts, and development sites.",
         tag1: "Institutional network access",
         tag2: "Complex negotiation management",
-        subtypes: "Operational Hotels  •  Hospitality Towers  •  Resort Properties",
+        subtypes:
+          "Operational Hotels  •  Hospitality Towers  •  Resort Properties",
         cta: "Discuss hotel sale",
       },
       hospitals: {
@@ -135,13 +230,15 @@ export const translations = {
         desc: "We manage the transfer of specialized real estate such as hospitals and large-scale medical facilities. These transactions involve significant due diligence, regulatory understanding, and matching with healthcare sector investors.",
         tag1: "Healthcare investor matching",
         tag2: "Extensive due diligence support",
-        subtypes: "General Hospitals  •  Medical Complexes  •  Specialized Clinics",
+        subtypes:
+          "General Hospitals  •  Medical Complexes  •  Specialized Clinics",
         cta: "Discuss specialized sale",
       },
       pageCta: {
         label: "SELLER-FIRST PLATFORM",
         title: "Ready to sell your premium asset?",
-        subtitle: "Start with a direct conversation and let Falkum handle buyer sourcing, negotiations, and the path to a successful closing.",
+        subtitle:
+          "Start with a direct conversation and let Falkum handle buyer sourcing, negotiations, and the path to a successful closing.",
         btn: "Contact the Falkum team",
       },
     },
@@ -149,7 +246,8 @@ export const translations = {
       breadcrumb: "Asset Types",
       label: "ASSET CATEGORY",
       title: "Residential Villas & Private Holdings",
-      subtitle: "Private homes, luxury villas, compounds, and residential holdings positioned securely for qualified individual and family buyers across major KSA cities.",
+      subtitle:
+        "Private homes, luxury villas, compounds, and residential holdings positioned securely for qualified individual and family buyers across major KSA cities.",
       discreet: {
         title: "Discreet & Targeted Sales",
         p1: "Falkum understands that selling premium residential properties requires a higher level of discretion. Rather than listing assets on public portals where value can be diluted, we directly source and qualify serious family offices, high-net-worth individuals, and pre-vetted buyers.",
@@ -157,10 +255,22 @@ export const translations = {
       },
       assetTypesTitle: "Asset Types We Handle",
       assets: [
-        { title: "Luxury Villas", desc: "Premium standalone homes in high-demand neighborhoods." },
-        { title: "Private Compounds", desc: "Gated residential developments and multi-unit family holdings." },
-        { title: "Palaces & Estates", desc: "Ultra-high-value properties requiring absolute confidentiality." },
-        { title: "Premium Land", desc: "Zoned residential plots positioned for luxury development." },
+        {
+          title: "Luxury Villas",
+          desc: "Premium standalone homes in high-demand neighborhoods.",
+        },
+        {
+          title: "Private Compounds",
+          desc: "Gated residential developments and multi-unit family holdings.",
+        },
+        {
+          title: "Palaces & Estates",
+          desc: "Ultra-high-value properties requiring absolute confidentiality.",
+        },
+        {
+          title: "Premium Land",
+          desc: "Zoned residential plots positioned for luxury development.",
+        },
       ],
       network: {
         title: "The Buyer Network",
@@ -170,12 +280,17 @@ export const translations = {
         title: "Start the process",
         desc: "Speak with a Falkum representative to confidentially evaluate your residential property and discuss a targeted sales strategy.",
         btn: "Contact Falkum Team",
-        items: ["Strict confidentiality", "Qualified buyer matching", "Zero upfront fees"],
+        items: [
+          "Strict confidentiality",
+          "Qualified buyer matching",
+          "Zero upfront fees",
+        ],
       },
       cta: {
         label: "LIST YOUR PROPERTY",
         title: "Ready to sell your residential asset?",
-        subtitle: "Start with a direct conversation and let Falkum handle buyer sourcing, negotiations, and the path to closing.",
+        subtitle:
+          "Start with a direct conversation and let Falkum handle buyer sourcing, negotiations, and the path to closing.",
         btn: "Contact the Falkum team",
       },
     },
@@ -183,8 +298,14 @@ export const translations = {
       breadcrumb: "Investment Buildings",
       label: "ASSET TYPES",
       title: "Buildings and Income Assets",
-      subtitle: "Apartment buildings, mixed-use properties, and income-generating assets marketed with stronger buyer qualification and clearer investment framing to yield-driven buyers.",
-      tags: ["Target Audience: Yield-driven buyers", "Qualification: Verified investors", "Asset Focus: ROI & Yield optimization", "Presentation: Structured financial framing"],
+      subtitle:
+        "Apartment buildings, mixed-use properties, and income-generating assets marketed with stronger buyer qualification and clearer investment framing to yield-driven buyers.",
+      tags: [
+        "Target Audience: Yield-driven buyers",
+        "Qualification: Verified investors",
+        "Asset Focus: ROI & Yield optimization",
+        "Presentation: Structured financial framing",
+      ],
       listBtn: "List an Investment Property",
       strategy: {
         label: "INVESTMENT STRATEGY",
@@ -192,27 +313,50 @@ export const translations = {
         desc: "We understand that selling an income-generating property requires presenting solid financial metrics and matching with buyers who have the capital and intent to acquire yield-driven assets.",
       },
       assetTypes: [
-        { title: "Apartment Buildings", desc: "Multi-tenant residential buildings offering steady rental yields. We position these to investors looking for stable, long-term cash flow in prime urban locations across major Saudi cities." },
-        { title: "Mixed-Use Properties", desc: "Assets combining retail, commercial, and residential spaces. Marketed by highlighting the diversified income streams and potential for value-add repositioning." },
-        { title: "Commercial Plazas", desc: "Retail centers and strip malls with established tenant mixes. Our approach emphasizes tenant covenant strength, lease terms, and foot traffic metrics." },
-        { title: "Office Blocks", desc: "Dedicated corporate and commercial buildings. We target institutional buyers and family offices seeking corporate tenants and long-term lease agreements." },
+        {
+          title: "Apartment Buildings",
+          desc: "Multi-tenant residential buildings offering steady rental yields. We position these to investors looking for stable, long-term cash flow in prime urban locations across major Saudi cities.",
+        },
+        {
+          title: "Mixed-Use Properties",
+          desc: "Assets combining retail, commercial, and residential spaces. Marketed by highlighting the diversified income streams and potential for value-add repositioning.",
+        },
+        {
+          title: "Commercial Plazas",
+          desc: "Retail centers and strip malls with established tenant mixes. Our approach emphasizes tenant covenant strength, lease terms, and foot traffic metrics.",
+        },
+        {
+          title: "Office Blocks",
+          desc: "Dedicated corporate and commercial buildings. We target institutional buyers and family offices seeking corporate tenants and long-term lease agreements.",
+        },
       ],
       features: [
-        { title: "Strict Buyer Qualification", desc: "We filter out casual inquiries, ensuring your property details are only shared with verified buyers who have demonstrated proof of funds and acquisition intent." },
-        { title: "Clear Investment Framing", desc: "Income properties are presented with structured financial summaries, highlighting CAP rates, current yields, and potential upside to speak the language of investors." },
-        { title: "Discreet Marketing", desc: "Maintain tenant stability and confidentiality. We market the financial profile first, only revealing the exact asset location once an NDA is in place with a qualified party." },
+        {
+          title: "Strict Buyer Qualification",
+          desc: "We filter out casual inquiries, ensuring your property details are only shared with verified buyers who have demonstrated proof of funds and acquisition intent.",
+        },
+        {
+          title: "Clear Investment Framing",
+          desc: "Income properties are presented with structured financial summaries, highlighting CAP rates, current yields, and potential upside to speak the language of investors.",
+        },
+        {
+          title: "Discreet Marketing",
+          desc: "Maintain tenant stability and confidentiality. We market the financial profile first, only revealing the exact asset location once an NDA is in place with a qualified party.",
+        },
       ],
       cta: {
         label: "LIST YOUR ASSET",
         title: "Ready to market your investment property?",
-        subtitle: "Connect with the Falkum team to discuss your property's financials and how we can match it with serious yield-driven buyers.",
+        subtitle:
+          "Connect with the Falkum team to discuss your property's financials and how we can match it with serious yield-driven buyers.",
         btn: "Contact Falkum to List",
       },
     },
     hotels: {
       label: "COMMERCIAL ASSETS",
       title: "Hotels and hospitality",
-      subtitle: "Hospitality assets handled with discreet marketing and investor-oriented presentation to attract serious acquisition conversations from institutional buyers and high-net-worth investors.",
+      subtitle:
+        "Hospitality assets handled with discreet marketing and investor-oriented presentation to attract serious acquisition conversations from institutional buyers and high-net-worth investors.",
       tags: ["Hotels & Resorts", "Institutional Demand"],
       startBtn: "Start a confidential discussion",
       tailored: {
@@ -221,94 +365,152 @@ export const translations = {
         desc: "Selling a hotel requires a different approach than residential real estate. Falkum provides the discretion, financial presentation, and targeted outreach needed for successful commercial transactions.",
       },
       features: [
-        { title: "Discreet Marketing", desc: "We understand that publicizing a hotel sale can impact ongoing operations and staff retention. Our approach is entirely confidential, approaching only verified, highly qualified institutional buyers and investment funds under strict NDAs." },
-        { title: "Investor-Oriented Presentation", desc: "Commercial buyers evaluate yield, operational history, and capital expenditure requirements. Falkum assists in structuring the asset's financial and operational data into a compelling investment memorandum that speaks directly to serious acquirers." },
-        { title: "Institutional Alignment", desc: "Our network includes regional hospitality operators, sovereign wealth funds, REITs, and private equity groups seeking footprint expansion in Saudi Arabia's growing tourism and business travel sectors." },
+        {
+          title: "Discreet Marketing",
+          desc: "We understand that publicizing a hotel sale can impact ongoing operations and staff retention. Our approach is entirely confidential, approaching only verified, highly qualified institutional buyers and investment funds under strict NDAs.",
+        },
+        {
+          title: "Investor-Oriented Presentation",
+          desc: "Commercial buyers evaluate yield, operational history, and capital expenditure requirements. Falkum assists in structuring the asset's financial and operational data into a compelling investment memorandum that speaks directly to serious acquirers.",
+        },
+        {
+          title: "Institutional Alignment",
+          desc: "Our network includes regional hospitality operators, sovereign wealth funds, REITs, and private equity groups seeking footprint expansion in Saudi Arabia's growing tourism and business travel sectors.",
+        },
       ],
       cta: {
         label: "SELLER-FIRST PLATFORM",
         title: "Ready to discuss your hospitality asset?",
-        subtitle: "Connect with our specialized commercial team to explore valuation, market appetite, and discreet transaction structuring.",
+        subtitle:
+          "Connect with our specialized commercial team to explore valuation, market appetite, and discreet transaction structuring.",
         btn: "Contact the Falkum team",
       },
     },
     hospitals: {
       label: "Specialized Commercial Assets",
       title: "Hospitals and specialized properties",
-      subtitle: "Complex institutional and commercial properties supported through meticulous buyer matching, documentation, and structured sale coordination designed specifically for healthcare and specialized sectors.",
+      subtitle:
+        "Complex institutional and commercial properties supported through meticulous buyer matching, documentation, and structured sale coordination designed specifically for healthcare and specialized sectors.",
       features: [
-        { title: "Institutional Buyer Matching", desc: "We discreetly source and qualify institutional investors, healthcare operators, and specialized funds actively seeking commercial medical and complex assets." },
-        { title: "Due Diligence Support", desc: "Comprehensive assistance in preparing and organizing operational, legal, and financial documentation required for rigorous institutional underwriting." },
-        { title: "Structured Coordination", desc: "Complex transactions require strict timelines and coordination. We manage negotiations and aligning multi-party stakeholders through to final closing." },
+        {
+          title: "Institutional Buyer Matching",
+          desc: "We discreetly source and qualify institutional investors, healthcare operators, and specialized funds actively seeking commercial medical and complex assets.",
+        },
+        {
+          title: "Due Diligence Support",
+          desc: "Comprehensive assistance in preparing and organizing operational, legal, and financial documentation required for rigorous institutional underwriting.",
+        },
+        {
+          title: "Structured Coordination",
+          desc: "Complex transactions require strict timelines and coordination. We manage negotiations and aligning multi-party stakeholders through to final closing.",
+        },
       ],
       assetFocus: {
         label: "ASSET FOCUS",
         title: "Navigating complex institutional sales",
         desc: "Selling a hospital, medical center, or specialized complex involves navigating regulatory requirements, operational handovers, and extensive due diligence. Falkum acts as your dedicated intermediary, ensuring the asset's value is protected and properly articulated to capable buyers.",
         items: [
-          { title: "Private Hospitals & Clinics", desc: "Fully operational medical facilities requiring discreet sale to qualified operators or real estate investment trusts." },
-          { title: "Specialized Complexes", desc: "Educational institutions, large-scale commercial compounds, and purpose-built institutional facilities." },
-          { title: "Confidential Execution", desc: "Maintaining operational stability while marketing the asset to restricted, highly vetted investor circles." },
+          {
+            title: "Private Hospitals & Clinics",
+            desc: "Fully operational medical facilities requiring discreet sale to qualified operators or real estate investment trusts.",
+          },
+          {
+            title: "Specialized Complexes",
+            desc: "Educational institutions, large-scale commercial compounds, and purpose-built institutional facilities.",
+          },
+          {
+            title: "Confidential Execution",
+            desc: "Maintaining operational stability while marketing the asset to restricted, highly vetted investor circles.",
+          },
         ],
       },
       cta: {
         label: "INITIATE A CONVERSATION",
         title: "Discuss your specialized asset discreetly",
-        subtitle: "Connect with our institutional team to explore buyer sourcing strategies and valuation approaches for your hospital or specialized property.",
+        subtitle:
+          "Connect with our institutional team to explore buyer sourcing strategies and valuation approaches for your hospital or specialized property.",
         btn: "Contact the Specialized Team",
       },
     },
     howItWorks: {
       label: "THE PROCESS",
       title: "A clear path from listing intent to successful closure",
-      subtitle: "The platform is structured around seller representation rather than public property search. The focus is on discreet marketing, qualified buyer conversations, and deal completion.",
+      subtitle:
+        "The platform is structured around seller representation rather than public property search. The focus is on discreet marketing, qualified buyer conversations, and deal completion.",
       steps: [
         {
           num: "01",
           title: "Property Review",
           desc: "Falkum reviews the asset category, sale goals, and recommended readiness before preparing a tailored sales approach.",
-          detail: "Our team evaluates the asset type, current market positioning, and seller objectives to build a targeted representation strategy."
+          detail:
+            "Our team evaluates the asset type, current market positioning, and seller objectives to build a targeted representation strategy.",
         },
         {
           num: "02",
           title: "Buyer Sourcing",
           desc: "Qualified buyers and investors are approached based on the property type, value, and buyer profile.",
-          detail: "We activate our network of pre-vetted investors, family offices, institutional buyers, and HNWIs who match the asset profile."
+          detail:
+            "We activate our network of pre-vetted investors, family offices, institutional buyers, and HNWIs who match the asset profile.",
         },
         {
           num: "03",
           title: "Negotiation & Alignment",
           desc: "Offer management, discussion handling, and expectation alignment are coordinated to move serious deals forward.",
-          detail: "Falkum manages all buyer interactions, filters unqualified interest, and ensures the seller's position is always protected."
+          detail:
+            "Falkum manages all buyer interactions, filters unqualified interest, and ensures the seller's position is always protected.",
         },
         {
           num: "04",
           title: "Documentation & Closing",
           desc: "Transaction paperwork and legal documentation support continue through the final stages until deal completion.",
-          detail: "We coordinate with legal advisors, ensure all documentation is properly structured, and guide both parties to a clean closing."
+          detail:
+            "We coordinate with legal advisors, ensure all documentation is properly structured, and guide both parties to a clean closing.",
         },
       ],
       note: "A success fee is charged only upon successful deal closure, aligning Falkum's outcome with the seller's outcome from the beginning.",
       cta: {
         label: "GET STARTED",
         title: "Ready to begin the process?",
-        subtitle: "Connect with the Falkum team to start a confidential review of your property and define a clear path to closing.",
+        subtitle:
+          "Connect with the Falkum team to start a confidential review of your property and define a clear path to closing.",
         btn: "List Your Property",
       },
     },
     contact: {
       label: "GET IN TOUCH",
       title: "Start a confidential discussion",
-      subtitle: "Connect with the Falkum team to discuss your property selling goals. We provide discreet, professional representation for high-value residential and commercial assets.",
+      subtitle:
+        "Connect with the Falkum team to discuss your property selling goals. We provide discreet, professional representation for high-value residential and commercial assets.",
       channels: [
-        { title: "WhatsApp", desc: "Start fast conversations for seller onboarding, buyer matching, and initial property discussions with our agents.", value: "+966 50 123 4567" },
-        { title: "Unified Number", desc: "A central line for seller inquiries, investor requests, and coordination with the dedicated Falkum support team.", value: "9200 12345" },
-        { title: "Email Us", desc: "Share detailed property information, asset summaries, and documentation requests in a structured, secure written channel.", value: "info@falkum.sa" },
-        { title: "Social Media", desc: "Follow our latest market insights, maintain brand presence, and route serious prospects into direct, private conversations.", value: "@falkum.sa" },
+        {
+          title: "WhatsApp",
+          desc: "Start fast conversations for seller onboarding, buyer matching, and initial property discussions with our agents.",
+          value: "+966 50 123 4567",
+          href: "https://wa.me/966501234567",
+        },
+        {
+          title: "Unified Number",
+          desc: "A central line for seller inquiries, investor requests, and coordination with the dedicated Falkum support team.",
+          value: "9200 12345",
+          href: "tel:920012345",
+        },
+        {
+          title: "Email Us",
+          desc: "Share detailed property information, asset summaries, and documentation requests in a structured, secure written channel.",
+          value: "info@falkum.sa",
+          href: "mailto:info@falkum.sa",
+        },
+        {
+          title: "Social Media",
+          desc: "Follow our latest market insights, maintain brand presence, and route serious prospects into direct, private conversations.",
+          value: "@falkum.sa",
+          href: "https://instagram.com/falkum.sa",
+        },
       ],
       form: {
         title: "Send a direct inquiry",
-        subtitle: "Fill out the form below and a representative will contact you shortly.",
+        subtitle:
+          "Fill out the form below and a representative will contact you shortly.",
         fullName: "Full Name",
         fullNamePlaceholder: "e.g. Abdullah Al-Fahad",
         phone: "Phone Number",
@@ -316,18 +518,28 @@ export const translations = {
         assetType: "Asset Type",
         assetTypePlaceholder: "Select property type",
         message: "Message / Property Details",
-        messagePlaceholder: "Provide a brief overview of your property or inquiry...",
+        messagePlaceholder:
+          "Provide a brief overview of your property or inquiry...",
         submit: "Submit Inquiry",
-        assetOptions: ["Villa / Private Residence", "Commercial Building", "Hotel / Hospitality", "Hospital / Medical Center", "Investment Property", "Other"],
+        assetOptions: [
+          "Villa / Private Residence",
+          "Commercial Building",
+          "Hotel / Hospitality",
+          "Hospital / Medical Center",
+          "Investment Property",
+          "Other",
+        ],
       },
       success: {
         title: "Inquiry Submitted",
-        message: "Thank you for reaching out. A Falkum representative will contact you within 24 hours.",
+        message:
+          "Thank you for reaching out. A Falkum representative will contact you within 24 hours.",
       },
     },
     listProperty: {
       title: "List Your Property",
-      subtitle: "Submit your residential or commercial asset for review. A Falkum representative will contact you within 24 hours to discuss representation and buyer sourcing.",
+      subtitle:
+        "Submit your residential or commercial asset for review. A Falkum representative will contact you within 24 hours to discuss representation and buyer sourcing.",
       contactInfo: "Contact Information",
       fullName: "Full Name",
       fullNamePlaceholder: "John Doe",
@@ -339,157 +551,260 @@ export const translations = {
       emailPlaceholder: "john@example.com",
       assetDetails: "Asset Details",
       assetCategory: "Asset Category",
-      assetCategoryOptions: ["Commercial - Hotel", "Commercial - Hospital", "Residential - Villa", "Investment - Building", "Other"],
+      assetCategoryOptions: [
+        "Commercial - Hotel",
+        "Commercial - Hospital",
+        "Residential - Villa",
+        "Investment - Building",
+        "Other",
+      ],
       cityLocation: "City / Location",
       cityPlaceholder: "Riyadh",
       description: "Property Description & Key Details",
-      descPlaceholder: "Briefly describe the property, current status, and any key selling points...",
+      descPlaceholder:
+        "Briefly describe the property, current status, and any key selling points...",
       submit: "Submit Listing Request",
       success: {
         title: "Request Submitted Successfully",
-        message: "Thank you for submitting your property. A Falkum representative will contact you within 24 hours to discuss representation and next steps.",
+        message:
+          "Thank you for submitting your property. A Falkum representative will contact you within 24 hours to discuss representation and next steps.",
       },
     },
     footer: {
-      tagline: "Residential and commercial property selling platform in Saudi Arabia for hotels, hospitals, buildings, villas, and investment assets.",
+      tagline:
+        "Residential and commercial property selling platform in Saudi Arabia for hotels, hospitals, buildings, villas, and investment assets.",
     },
   },
   ar: {
     nav: {
       home: "الرئيسية",
-      assetTypes: "أنواع الأصول",
-      howItWorks: "كيف يعمل",
+      assetTypes: "فئات الأصول",
+      howItWorks: "آلية العمل",
       contact: "تواصل معنا",
-      listProperty: "أدرج عقارك",
+      listProperty: "اعرض عقارك",
     },
     home: {
       hero: {
-        title: "نربط المشترين الجادين بالبائعين السكنيين والتجاريين",
+        trustBadge: "منصة وساطة عقارية موثوقة في المملكة العربية السعودية",
+        title:
+          "نربط البائعين بالمشترين الجادين للأصول العقارية السكنية والتجارية",
         subtitle:
-          "فالكم منصة بيع للأصول السكنية والتجارية كالفنادق والمستشفيات والمباني والفلل والعقارات الاستثمارية. نتولى استقطاب المشترين والتفاوض والتوثيق القانوني مقابل عمولة تُستحق عند إتمام الصفقة فقط.",
+          "فالكم منصة متخصصة في بيع الأصول العقارية السكنية والتجارية مثل الفنادق والمستشفيات والمباني والفلل والعقارات الاستثمارية. ندير عمليات استقطاب المشترين والتفاوض وإجراءات التوثيق القانوني، ويتم احتساب العمولة فقط عند إتمام الصفقة بنجاح.",
         cta: "تواصل مع فالكم",
         viewCategories: "عرض فئات الأصول",
       },
       heroTags: {
         buyerSourcing: "استقطاب المشترين",
-        buyerSourcingDesc: "تواصل موجّه مع المشترين المحليين والدوليين المؤهلين للمعاملات عالية القيمة.",
+        buyerSourcingDesc:
+          "وصول مستهدف إلى مشترين محليين ودوليين مؤهلين لإتمام صفقات جادة وعالية القيمة.",
         negotiation: "دعم التفاوض",
-        negotiationDesc: "إدارة مخصصة للتفاوض مصممة للأصول الخاصة والمؤسسية عالية القيمة.",
+        negotiationDesc:
+          "إدارة تفاوض منظمة تناسب الأصول الخاصة والمؤسسية ذات القيمة المرتفعة.",
         legal: "التوثيق القانوني",
-        legalDesc: "تنسيق واضح للمعاملات ودعم التوثيق حتى مرحلة الإغلاق.",
+        legalDesc:
+          "تنسيق واضح لمراحل الصفقة ودعم للتوثيق حتى الوصول إلى الإغلاق النهائي.",
       },
       assetTypes: {
         residential: "سكني",
-        residentialDesc: "فلل ومجمعات وعمارات سكنية ومساكن خاصة",
+        residentialDesc: "فلل ومجمعات سكنية ومبانٍ سكنية ووحدات ومساكن خاصة",
         commercial: "تجاري",
-        commercialDesc: "فنادق ومستشفيات ومكاتب وأصول متخصصة",
+        commercialDesc: "فنادق ومستشفيات ومبانٍ مكتبية وأصول متخصصة",
       },
       trust: {
-        label: "لماذا تختار فالكم",
-        title: "مبني لتعزيز الثقة بين البائعين والمشترين الجادين",
+        label: "لماذا فالكم",
+        title: "منصة مبنية على الثقة للبائعين والمشترين الجادين",
         subtitle:
-          "تتموضع فالكم كشريك معاملات سري لا مجرد منصة إعلانات. نساعد البائعين على حماية قيمة أصولهم بينما نوفر للمشترين الجادين مساراً أكثر تنظيماً للوصول إلى الفرص.",
+          "فالكم ليست مجرد منصة عرض، بل شريك معاملات يعمل بسرية واحترافية. نساعد البائعين على حماية قيمة أصولهم، ونمنح المشترين الجادين مساراً أوضح للوصول إلى الفرص المناسبة والتفاوض عليها واستكمال توثيقها.",
         forSellers: "ثقة للبائعين",
-        forSellersDesc: "يعمل البائعون من خلال ممارسة بيع منضبطة مع سرية أفضل وتقديم مشترين مؤهلين وتمثيل يركز على حماية حقوقهم.",
-        forSellersItems: ["تواصل سري مع المشترين", "دعم التفاوض للبائع أولاً"],
-        forBuyers: "ثقة للمشترين",
-        forBuyersDesc: "يحصل المشترون والمستثمرون المؤهلون على فرص منظمة مع تواصل أوضح وتنسيق أسرع.",
-        forBuyersItems: ["مقدمات أصول منتقاة", "تنسيق التوثيق"],
-        aligned: "حوافز متوائمة",
-        alignedDesc: "لأن فالكم تكسب عند الإغلاق الناجح، تظل العملية مركزة على المطابقات الجادة والتفاوض الواضح.",
-        alignedItems: ["نموذج رسوم النجاح", "تنفيذ موجّه بالنتائج"],
+        forSellersDesc:
+          "يحصل المالك على عملية بيع أكثر ضبطاً وسرية، مع تقديم العقار لمشترين مؤهلين وتمثيل يركز على جودة الصفقة وحماية مصلحة البائع.",
+        forSellersItems: [
+          "تواصل سري مع المشترين",
+          "دعم تفاوض يركز على مصلحة البائع",
+        ],
+        forBuyers: "وضوح للمشترين",
+        forBuyersDesc:
+          "يحصل المشترون والمستثمرون المؤهلون على فرص مرتبة بشكل أفضل، مع تواصل أوضح وتنسيق أسرع وتعامل أكثر جدية مع الصفقات.",
+        forBuyersItems: ["فرص عقارية منتقاة", "تنسيق للتوثيق والمستندات"],
+        aligned: "توافق في المصالح",
+        alignedDesc:
+          "بما أن دخل فالكم مرتبط بإتمام الصفقة بنجاح، يبقى التركيز على مطابقة الأطراف الجادة، وإدارة تفاوض نظيف، والوصول إلى الإغلاق النهائي.",
+        alignedItems: [" نموذج عمولة عند النجاح ", "تنفيذ موجّه نحو النتائج"],
       },
       trustSummary:
-        "تدمج فالكم تأهيل المشترين الصارم والإطار المالي والتنفيذ الموجّه بالنتائج ليستفيد البائعون والمشترون الجادون من شريك معاملات واحد ومتوائم.",
+        "أرقام توضيحية للعرض فقط: 48 صفقة مغلقة، وأصول مسوقة بقيمة 1.2 مليار ريال، وأكثر من 320 علاقة نشطة مع مشترين ومستثمرين، ومعدل إحالة متكررة يبلغ 76%. يمكن استبدالها لاحقاً بأرقام فالكم المعتمدة.",
       stats: {
-        hours: { value: "24 ساعة", label: "نافذة الاستجابة المستهدفة لاستفسارات البائعين والمشترين الجدد." },
-        confidential: { value: "100%", label: "معالجة سرية للوثائق الخاصة والمعلومات الحساسة." },
-        point: { value: "نقطة واحدة", label: "شريك معاملات واحد يتولى الاستقطاب والتفاوض والتوثيق." },
-        upfront: { value: "0 مقدماً", label: "تُستحق العمولة فقط بعد إغلاق الصفقة بنجاح." },
+        hours: {
+          value: "24 ساعة",
+          label:
+            "المدة المستهدفة للرد الأولي على استفسارات البائعين والمشترين الجدد",
+        },
+        confidential: {
+          value: "100%",
+          label:
+            "تعامل سري مع النقاشات الخاصة والمعلومات الحساسة المتعلقة بالأصول",
+        },
+        point: {
+          value: "جهة واحدة",
+          label:
+            "شريك واحد يدير استقطاب المشترين والتفاوض والتوثيق ضمن رحلة الصفقة",
+        },
+        upfront: {
+          value: "0 مقدم",
+          label: "لا يتم احتساب العمولة إلا بعد إتمام الصفقة بنجاح",
+        },
       },
       assetCategories: {
         label: "فئات الأصول",
         title: "مصمم للمبيعات السكنية والتجارية",
-        subtitle: "تدعم فالكم البائعين عبر فئات أصول متعددة مع تموضع مخصص لملفات المشترين المختلفة وأحجام المعاملات.",
+        subtitle:
+          "تدعم فالكم البائعين عبر عدة فئات عقارية، مع أسلوب عرض مناسب لكل نوع أصل ولكل شريحة من المشترين وحجم الصفقة.",
         cta: "ابدأ نقاشاً سرياً",
         viewDetails: "عرض التفاصيل",
-        villas: { title: "الفلل والمساكن", desc: "منازل خاصة وفلل فاخرة ومجمعات وعقارات. موجّهة للمشترين الأفراد والعائلات.", tag1: "منازل خاصة", tag2: "مدن المملكة الكبرى", badge: "سكني" },
-        buildings: { title: "المباني والأصول الدخلية", desc: "عمارات سكنية ومشاريع متعددة الاستخدامات وأصول مؤجرة. تسويق أفضل للأصول المدرّة للدخل.", tag1: "مباني", tag2: "أصول دخلية", badge: "استثمار" },
-        hotels: { title: "الفنادق والضيافة", desc: "أصول الضيافة مع تسويق سري وعرض موجّه للمستثمرين لاستقطاب محادثات الاستحواذ الجادة.", tag1: "فنادق", tag2: "مستأجرون مؤسسيون", badge: "تجاري" },
-        hospitals: { title: "المستشفيات والأصول المتخصصة", desc: "عقارات مؤسسية وتجارية معقدة مدعومة بمطابقة المشترين والتوثيق وتنسيق إغلاق الاستحواذ.", tag1: "مستشفيات", tag2: "دعم العناية الواجبة", badge: "متخصص" },
+        villas: {
+          title: "الفلل والمساكن",
+          desc: "منازل خاصة وفلل فاخرة ومجمعات سكنية وأصول سكنية يتم تقديمها لمشترين أفراد وعائلات مؤهلين.",
+          tag1: "منازل خاصة",
+          tag2: "مدن المملكة الرئيسية",
+          badge: "سكني",
+        },
+        buildings: {
+          title: "المباني والأصول المدرة للدخل",
+          desc: "مبانٍ سكنية واستعمالات مختلطة وأصول مدرة للدخل تُسوَّق مع تأهيل أفضل للمشترين وطرح استثماري أوضح.",
+          tag1: "مبانٍ",
+          tag2: "مشترون بعائد استثماري",
+          badge: "استثماري",
+        },
+        hotels: {
+          title: "الفنادق والضيافة",
+          desc: "أصول الضيافة مع تسويق سري وعرض موجّه للمستثمرين لاستقطاب محادثات الاستحواذ الجادة.",
+          tag1: "فنادق",
+          tag2: "طلب مؤسسي",
+          badge: "تجاري",
+        },
+        hospitals: {
+          title: "المستشفيات والأصول المتخصصة",
+          desc: "صول مؤسسية وتجارية معقدة يتم دعمها عبر مطابقة المشترين والتوثيق وتنسيق البيع بشكل منظم.",
+          tag1: "مستشفيات",
+          tag2: "دعم العناية الواجبة",
+          badge: "متخصص",
+        },
       },
       howItWorks: {
-        label: "كيف يعمل",
-        title: "مسار واضح من نية الإدراج إلى الإغلاق الناجح",
-        subtitle: "تتمحور المنصة حول تمثيل البائع لا البحث العام عن العقارات. التركيز على التسويق السري ومحادثات المشترين المؤهلين وإتمام الصفقة.",
+        label: "آلية العمل",
+        title: "مسار واضح من نية البيع إلى إتمام الصفقة",
+        subtitle:
+          "المنصة مبنية على تمثيل البائع وليس على البحث المفتوح عن العقارات. التركيز هنا على التسويق السري، والتواصل مع المشترين المؤهلين، وإنهاء الصفقة بنجاح.",
         steps: [
-          { num: "1", title: "مراجعة العقار", desc: "تراجع فالكم فئة الأصل وأهداف البيع والجاهزية قبل إعداد نهج مبيعات مخصص." },
-          { num: "2", title: "استقطاب المشترين", desc: "يتم التواصل مع المشترين والمستثمرين المؤهلين بناءً على نوع العقار وقيمته وملف المشتري." },
-          { num: "3", title: "التفاوض والتوافق", desc: "تتولى إدارة العروض والتعامل مع المناقشات وتوافق التوقعات لتحريك الصفقات الجادة." },
-          { num: "4", title: "التوثيق والإغلاق", desc: "يستمر دعم أوراق المعاملات والتوثيق القانوني عبر المراحل النهائية حتى اكتمال الصفقة." },
+          {
+            num: "1",
+            title: "مراجعة العقار",
+            desc: "تراجع فالكم فئة الأصل وأهداف البيع وجاهزية المستندات قبل إعداد أسلوب بيع مناسب للحالة.",
+          },
+          {
+            num: "2",
+            title: "استقطاب المشترين",
+            desc: "يتم التواصل مع مشترين ومستثمرين مؤهلين بناءً على نوع العقار وقيمته وطبيعة الصفقة.",
+          },
+          {
+            num: "3",
+            title: "التفاوض ومواءمة التوقعات",
+            desc: "تتم إدارة العروض والمناقشات وتنسيق التوقعات لتحريك الصفقات الجادة إلى الأمام.",
+          },
+          {
+            num: "4",
+            title: "التوثيق والإغلاق",
+            desc: "يستمر دعم الأوراق النظامية والمستندات القانونية حتى المراحل النهائية وإتمام الصفقة.",
+          },
         ],
-        successFee: "تُستحق رسوم النجاح فقط عند إغلاق الصفقة، مما يوائم نتيجة فالكم مع نتيجة البائع منذ البداية.",
+        successFee:
+          "يتم احتساب عمولة نجاح فقط عند إغلاق الصفقة بنجاح، بما يضمن توافق مصلحة فالكم مع نتيجة البائع منذ البداية.",
       },
       contact: {
         label: "صفحة التواصل",
-        title: "تواصل مع فالكم عبر القنوات المتاحة",
-        subtitle: "يمكن للعملاء التواصل مع الفريق عبر واتساب أو البريد الإلكتروني أو وسائل التواصل الاجتماعي أو الرقم الموحد.",
-        whatsapp: { label: "واتساب", desc: "ابدأ محادثات سريعة لتأهيل البائعين ومطابقة المشترين والمناقشات الأولية للعقارات.", value: "+966 50 123 4567" },
-        email: { label: "البريد الإلكتروني", desc: "شارك تفاصيل العقار وملخصات الأصول وطلبات التوثيق في قناة مكتوبة منظمة.", value: "info@falkum.sa" },
-        unified: { label: "الرقم الموحد", desc: "خط مركزي لاستفسارات البائعين وطلبات المستثمرين والتنسيق مع فريق فالكم.", value: "9200 12345" },
-        social: { label: "وسائل التواصل الاجتماعي", desc: "حافظ على الحضور الرقمي، رد على الاستفسارات العامة، ووجّه الاحتمالات الجادة نحو محادثة مباشرة.", value: "@falkum.sa" },
+        title: "تواصل مع فالكم عبر القنوات المتاحة من اليوم الأول",
+        subtitle:
+          "في المرحلة الأولى، يمكن للعملاء التواصل مع الفريق عبر واتساب أو البريد الإلكتروني أو وسائل التواصل الاجتماعي أو الرقم الموحد. تمثل هذه المنطقة تجربة صفحة التواصل الأساسية ضمن الموقع.",
+        whatsapp: {
+          label: "واتساب",
+          desc: "ابدأ محادثات سريعة لبدء عرض العقار، أو مطابقة المشترين، أو مناقشة التفاصيل الأولية.",
+          value: "+966 50 123 4567",
+          href: "https://wa.me/966501234567",
+        },
+        email: {
+          label: "البريد الإلكتروني",
+          desc: "شارك تفاصيل العقار وملخصات الأصول وطلبات المستندات عبر قناة مكتوبة ومنظمة.",
+          value: "info@falkum.sa",
+          href: "mailto:info@falkum.sa",
+        },
+        unified: {
+          label: "الرقم الموحد",
+          desc: "خط مركزي لاستفسارات البائعين وطلبات المستثمرين والتنسيق مع فريق فالكم.",
+          value: "9200 12345",
+          href: "tel:920012345",
+        },
+        social: {
+          label: "وسائل التواصل الاجتماعي",
+          desc: "حضور تعريفي للعلامة التجارية والرد على الاستفسارات العامة وتحويل العملاء الجادين إلى تواصل مباشر.",
+          value: "@falkum.sa",
+          href: "https://instagram.com/falkum.sa",
+        },
       },
       cta: {
-        label: "منصة البائع أولاً",
-        title: "هل أنت مستعد لبيع فندق أو مستشفى أو مبنى أو فيلا أو عقار استثماري؟",
-        subtitle: "ابدأ بمحادثة مباشرة ودع فالكم تتولى استقطاب المشترين والتفاوض والمسار نحو الإغلاق.",
+        label: "منصة تركّز على البائع",
+        title:
+          "هل أنت جاهز لبيع فندق أو مستشفى أو مبنى أو فيلا أو أصل استثماري؟",
+        subtitle:
+          "ابدأ بمحادثة مباشرة، واترك لفالكم مهمة استقطاب المشترين والتفاوض وإدارة الطريق نحو الإغلاق.",
         btn: "تواصل مع فريق فالكم",
       },
     },
     assetTypes: {
       label: "محفظة الأصول",
-      title: "العقارات التي نمثلها",
-      subtitle: "تدير فالكم البيع السري للعقارات السكنية والتجارية والمتخصصة عالية القيمة في جميع أنحاء المملكة العربية السعودية.",
+      title: "الأصول التي نمثلها",
+      subtitle:
+        "تدير فالكم البيع السري للأصول العقارية السكنية والتجارية والمتخصصة عالية القيمة في السعودية، مع توجيه كل أصل إلى المشترين الجادين الأكثر تأهيلاً.",
       villas: {
         tag: "سكني",
         title: "الفلل والمساكن الخاصة",
-        desc: "نتولى بيع الفلل الفاخرة والمقار الخاصة والمجمعات السكنية الحصرية. تتطلب هذه العقارات تسويقاً موجّهاً لأصحاب الثروات العالية والعائلات.",
-        tag1: "مطابقة مشتري HNWI",
-        tag2: "معاينة عقارات سرية",
-        subtypes: "فلل خاصة  •  قصور وعقارات  •  مجمعات سكنية",
-        cta: "ناقش البيع السكني",
+        desc: "نتولى بيع الفلل الفاخرة والممتلكات الخاصة والمجمعات السكنية المميزة. هذا النوع من الأصول يحتاج إلى تسويق موجّه بعناية للوصول إلى الأفراد والعائلات المؤهلين الباحثين عن تملك سكني فاخر أو أصول خاصة.",
+        tag1: "مواءمة مع مشترين أفراد ذوي جدية وقدرة شرائية",
+        tag2: "معاينات خاصة بسرية عالية",
+        subtypes: "فلل خاصة  • قصور وممتلكات  •  مجمعات سكنية",
+        cta: "ناقش بيع أصل سكني",
       },
       buildings: {
         tag: "استثمار",
-        title: "المباني والأصول الدخلية",
-        desc: "مصمم لأصحاب العمارات السكنية والمشاريع متعددة الاستخدامات والأصول المؤجرة. نؤطر هذه العقارات حول أدائها المالي والعائد والقيمة طويلة الأجل.",
-        tag1: "تسويق موجّه بالعائد",
-        tag2: "دعم التوثيق المالي",
-        subtypes: "عمارات سكنية  •  تجزئة متعددة الاستخدامات  •  مخططات دخلية",
-        cta: "ناقش بيع الاستثمار",
+        title: "المباني والأصول المدرة للدخل",
+        desc: "مخصص لمالكي المباني السكنية متعددة الوحدات والمشاريع متعددة الاستخدامات والأصول المؤجرة. نقوم بعرض الأصل من منظور العائد والأداء والقيمة طويلة الأمد لجذب المستثمرين والمشترين المؤهلين.",
+        tag1: "طرح تسويقي يرتكز على العائد الاستثماري",
+        tag2: "دعم في توثيق البيانات المالية",
+        subtypes: " مباني شقق  •  عقارات متعددة الاستخدام  • أصول مدرة للدخل",
+        cta: "ناقش بيع أصل استثماري",
       },
       hotels: {
         tag: "تجاري",
         title: "الفنادق والضيافة",
-        desc: "تتطلب عقارات الضيافة تمثيلاً متخصصاً للغاية. تعمل فالكم مباشرةً مع المستثمرين المؤسسيين ومجموعات الضيافة والمشترين الكبار.",
-        tag1: "الوصول إلى الشبكة المؤسسية",
-        tag2: "إدارة تفاوض معقد",
-        subtypes: "فنادق تشغيلية  •  أبراج ضيافة  •  عقارات منتجعات",
-        cta: "ناقش بيع الفندق",
+        desc: "الأصول الفندقية تحتاج إلى تمثيل متخصص. تعمل فالكم مباشرة مع المستثمرين المؤسسيين ومجموعات الضيافة والمشترين الكبار لتسهيل صفقات الاستحواذ على الفنادق التشغيلية والمنتجعات ومواقع التطوير.",
+        tag1: "وصول إلى شبكة مستثمرين ومشترين مؤسسيين",
+        tag2: "إدارة تفاوض احترافية للصفقات المعقدة",
+        subtypes: "فنادق تشغيلية  •  أبراج ضيافة  •منتجعات",
+        cta: "ناقش بيع أصل متخصص",
       },
       hospitals: {
         tag: "متخصص",
         title: "المستشفيات والمراكز الطبية",
-        desc: "نتولى نقل العقارات المتخصصة كالمستشفيات والمرافق الطبية الكبرى. تتضمن هذه الصفقات عناية واجبة مكثفة وفهماً تنظيمياً ومطابقة مع مستثمري قطاع الرعاية الصحية.",
+        desc: "ندير نقل وبيع الأصول العقارية المتخصصة مثل المستشفيات والمجمعات الطبية الكبيرة. هذا النوع من الصفقات يتطلب عناية أكبر في الفحص النافي للجهالة، وفهماً تنظيمياً، ومطابقة دقيقة مع المستثمرين المناسبين.",
         tag1: "مطابقة مستثمري الرعاية الصحية",
         tag2: "دعم عناية واجبة مكثفة",
         subtypes: "مستشفيات عامة  •  مجمعات طبية  •  عيادات متخصصة",
-        cta: "ناقش البيع المتخصص",
+        cta: "ناقش بيع أصل متخصص",
       },
       pageCta: {
         label: "منصة البائع أولاً",
-        title: "هل أنت مستعد لبيع أصلك المميز؟",
-        subtitle: "ابدأ بمحادثة مباشرة ودع فالكم تتولى استقطاب المشترين والتفاوض والمسار نحو الإغلاق الناجح.",
+        title: "هل أنت جاهز لبيع أصلك المميز؟",
+        subtitle:
+          "ابدأ بمحادثة مباشرة، ودع فالكم تتولى الوصول إلى المشترين، وإدارة التفاوض، ومتابعة الصفقة حتى الإغلاق الناجح.",
         btn: "تواصل مع فريق فالكم",
       },
     },
@@ -497,7 +812,8 @@ export const translations = {
       breadcrumb: "أنواع الأصول",
       label: "فئة الأصول",
       title: "الفلل السكنية والممتلكات الخاصة",
-      subtitle: "منازل خاصة وفلل فاخرة ومجمعات وممتلكات سكنية لأفضل المشترين الأفراد والعائلات في كبرى مدن المملكة.",
+      subtitle:
+        "منازل خاصة وفلل فاخرة ومجمعات وممتلكات سكنية لأفضل المشترين الأفراد والعائلات في كبرى مدن المملكة.",
       discreet: {
         title: "مبيعات سرية وموجّهة",
         p1: "تدرك فالكم أن بيع العقارات السكنية المميزة يتطلب مستوى أعلى من السرية. بدلاً من إدراج الأصول في البوابات العامة، نستقطب مباشرةً ونؤهل مكاتب العائلات الجادة وأصحاب الثروات العالية والمشترين المدققين مسبقاً.",
@@ -505,9 +821,18 @@ export const translations = {
       },
       assetTypesTitle: "أنواع الأصول التي نتعامل بها",
       assets: [
-        { title: "فلل فاخرة", desc: "منازل مستقلة مميزة في أحياء عالية الطلب." },
-        { title: "مجمعات خاصة", desc: "تطويرات سكنية مسوّرة وممتلكات عائلية متعددة الوحدات." },
-        { title: "قصور وعقارات", desc: "عقارات فائقة القيمة تتطلب سرية مطلقة." },
+        {
+          title: "فلل فاخرة",
+          desc: "منازل مستقلة مميزة في أحياء عالية الطلب.",
+        },
+        {
+          title: "مجمعات خاصة",
+          desc: "تطويرات سكنية مسوّرة وممتلكات عائلية متعددة الوحدات.",
+        },
+        {
+          title: "قصور وعقارات",
+          desc: "عقارات فائقة القيمة تتطلب سرية مطلقة.",
+        },
         { title: "أراضٍ مميزة", desc: "قطع أراضي سكنية مخططة لتطوير فاخر." },
       ],
       network: {
@@ -523,7 +848,8 @@ export const translations = {
       cta: {
         label: "أدرج عقارك",
         title: "هل أنت مستعد لبيع أصلك السكني؟",
-        subtitle: "ابدأ بمحادثة مباشرة ودع فالكم تتولى استقطاب المشترين والتفاوض والمسار نحو الإغلاق.",
+        subtitle:
+          "ابدأ بمحادثة مباشرة ودع فالكم تتولى استقطاب المشترين والتفاوض والمسار نحو الإغلاق.",
         btn: "تواصل مع فريق فالكم",
       },
     },
@@ -531,8 +857,14 @@ export const translations = {
       breadcrumb: "مباني الاستثمار",
       label: "أنواع الأصول",
       title: "المباني والأصول الدخلية",
-      subtitle: "عمارات سكنية وعقارات متعددة الاستخدامات وأصول مدرّة للدخل مع تأهيل أقوى للمشترين وإطار استثماري أوضح للمشترين الموجّهين بالعائد.",
-      tags: ["الجمهور المستهدف: مشترون موجّهون بالعائد", "التأهيل: مستثمرون موثقون", "تركيز الأصول: تحسين العائد والاستثمار", "العرض: إطار مالي منظم"],
+      subtitle:
+        "عمارات سكنية وعقارات متعددة الاستخدامات وأصول مدرّة للدخل مع تأهيل أقوى للمشترين وإطار استثماري أوضح للمشترين الموجّهين بالعائد.",
+      tags: [
+        "الجمهور المستهدف: مشترون موجّهون بالعائد",
+        "التأهيل: مستثمرون موثقون",
+        "تركيز الأصول: تحسين العائد والاستثمار",
+        "العرض: إطار مالي منظم",
+      ],
       listBtn: "أدرج عقاراً استثمارياً",
       strategy: {
         label: "استراتيجية الاستثمار",
@@ -540,27 +872,50 @@ export const translations = {
         desc: "ندرك أن بيع عقار مدرّ للدخل يتطلب تقديم مقاييس مالية صلبة ومطابقة مع مشترين يملكون رأس المال والنية للاستحواذ.",
       },
       assetTypes: [
-        { title: "عمارات سكنية", desc: "مباني سكنية متعددة المستأجرين توفر عوائد إيجارية ثابتة. نقدمها للمستثمرين الباحثين عن تدفق نقدي مستقر وطويل الأجل." },
-        { title: "عقارات متعددة الاستخدامات", desc: "أصول تجمع تجزئة وتجارة وسكن. تسويقها بتسليط الضوء على تدفقات الدخل المتنوعة وإمكانية إعادة التموضع." },
-        { title: "مراكز تجارية", desc: "مراكز تجزئة وشرائط تجارية بمزيج مستأجرين راسخ. نهجنا يركز على قوة المستأجر وشروط الإيجار ومقاييس حركة المرور." },
-        { title: "مكاتب تجارية", desc: "مباني مكتبية مخصصة للشركات. نستهدف المشترين المؤسسيين ومكاتب العائلات الباحثة عن مستأجرين مؤسسيين واتفاقيات إيجار طويلة الأجل." },
+        {
+          title: "عمارات سكنية",
+          desc: "مباني سكنية متعددة المستأجرين توفر عوائد إيجارية ثابتة. نقدمها للمستثمرين الباحثين عن تدفق نقدي مستقر وطويل الأجل.",
+        },
+        {
+          title: "عقارات متعددة الاستخدامات",
+          desc: "أصول تجمع تجزئة وتجارة وسكن. تسويقها بتسليط الضوء على تدفقات الدخل المتنوعة وإمكانية إعادة التموضع.",
+        },
+        {
+          title: "مراكز تجارية",
+          desc: "مراكز تجزئة وشرائط تجارية بمزيج مستأجرين راسخ. نهجنا يركز على قوة المستأجر وشروط الإيجار ومقاييس حركة المرور.",
+        },
+        {
+          title: "مكاتب تجارية",
+          desc: "مباني مكتبية مخصصة للشركات. نستهدف المشترين المؤسسيين ومكاتب العائلات الباحثة عن مستأجرين مؤسسيين واتفاقيات إيجار طويلة الأجل.",
+        },
       ],
       features: [
-        { title: "تأهيل صارم للمشترين", desc: "نصفي الاستفسارات العرضية لضمان مشاركة تفاصيل عقارك فقط مع مشترين موثقين أثبتوا إثبات الأموال ونية الاستحواذ." },
-        { title: "إطار استثماري واضح", desc: "تُقدَّم العقارات الدخلية مع ملخصات مالية منظمة تبرز معدلات الرسملة والعوائد الحالية والإمكانات المستقبلية." },
-        { title: "تسويق سري", desc: "الحفاظ على استقرار المستأجر والسرية. نسوّق الملف المالي أولاً، ونكشف عن موقع الأصل فقط بعد توقيع NDA مع طرف مؤهل." },
+        {
+          title: "تأهيل صارم للمشترين",
+          desc: "نصفي الاستفسارات العرضية لضمان مشاركة تفاصيل عقارك فقط مع مشترين موثقين أثبتوا إثبات الأموال ونية الاستحواذ.",
+        },
+        {
+          title: "إطار استثماري واضح",
+          desc: "تُقدَّم العقارات الدخلية مع ملخصات مالية منظمة تبرز معدلات الرسملة والعوائد الحالية والإمكانات المستقبلية.",
+        },
+        {
+          title: "تسويق سري",
+          desc: "الحفاظ على استقرار المستأجر والسرية. نسوّق الملف المالي أولاً، ونكشف عن موقع الأصل فقط بعد توقيع NDA مع طرف مؤهل.",
+        },
       ],
       cta: {
         label: "أدرج أصلك",
         title: "هل أنت مستعد لتسويق عقارك الاستثماري؟",
-        subtitle: "تواصل مع فريق فالكم لمناقشة مالية عقارك وكيف يمكننا مطابقته مع مشترين جادين موجّهين بالعائد.",
+        subtitle:
+          "تواصل مع فريق فالكم لمناقشة مالية عقارك وكيف يمكننا مطابقته مع مشترين جادين موجّهين بالعائد.",
         btn: "تواصل مع فالكم للإدراج",
       },
     },
     hotels: {
       label: "أصول تجارية",
       title: "الفنادق والضيافة",
-      subtitle: "أصول الضيافة مع تسويق سري وعرض موجّه للمستثمرين لاستقطاب محادثات استحواذ جادة من المشترين المؤسسيين وأصحاب الثروات العالية.",
+      subtitle:
+        "أصول الضيافة مع تسويق سري وعرض موجّه للمستثمرين لاستقطاب محادثات استحواذ جادة من المشترين المؤسسيين وأصحاب الثروات العالية.",
       tags: ["فنادق ومنتجعات", "طلب مؤسسي"],
       startBtn: "ابدأ نقاشاً سرياً",
       tailored: {
@@ -569,90 +924,147 @@ export const translations = {
         desc: "بيع فندق يتطلب نهجاً مختلفاً عن العقارات السكنية. توفر فالكم السرية والعرض المالي والتواصل الموجّه اللازم للمعاملات التجارية الناجحة.",
       },
       features: [
-        { title: "تسويق سري", desc: "نفهم أن الإعلان عن بيع فندق قد يؤثر على العمليات الجارية والاحتفاظ بالموظفين. نهجنا سري بالكامل، نتعامل فقط مع مشترين مؤسسيين موثقين." },
-        { title: "عرض موجّه للمستثمرين", desc: "المشترون التجاريون يقيّمون العائد والتاريخ التشغيلي ومتطلبات النفقات الرأسمالية. تساعد فالكم في هيكلة البيانات المالية والتشغيلية في مذكرة استثمار مقنعة." },
-        { title: "التوافق المؤسسي", desc: "شبكتنا تشمل مشغلي ضيافة إقليميين وصناديق ثروة سيادية وصناديق استثمار عقاري ومجموعات الأسهم الخاصة الباحثة عن التوسع في قطاع السياحة السعودي." },
+        {
+          title: "تسويق سري",
+          desc: "نفهم أن الإعلان عن بيع فندق قد يؤثر على العمليات الجارية والاحتفاظ بالموظفين. نهجنا سري بالكامل، نتعامل فقط مع مشترين مؤسسيين موثقين.",
+        },
+        {
+          title: "عرض موجّه للمستثمرين",
+          desc: "المشترون التجاريون يقيّمون العائد والتاريخ التشغيلي ومتطلبات النفقات الرأسمالية. تساعد فالكم في هيكلة البيانات المالية والتشغيلية في مذكرة استثمار مقنعة.",
+        },
+        {
+          title: "التوافق المؤسسي",
+          desc: "شبكتنا تشمل مشغلي ضيافة إقليميين وصناديق ثروة سيادية وصناديق استثمار عقاري ومجموعات الأسهم الخاصة الباحثة عن التوسع في قطاع السياحة السعودي.",
+        },
       ],
       cta: {
         label: "منصة البائع أولاً",
         title: "هل أنت مستعد لمناقشة أصل الضيافة الخاص بك؟",
-        subtitle: "تواصل مع فريقنا التجاري المتخصص لاستكشاف التقييم وشهية السوق وهيكلة المعاملات السرية.",
+        subtitle:
+          "تواصل مع فريقنا التجاري المتخصص لاستكشاف التقييم وشهية السوق وهيكلة المعاملات السرية.",
         btn: "تواصل مع فريق فالكم",
       },
     },
     hospitals: {
       label: "أصول تجارية متخصصة",
       title: "المستشفيات والعقارات المتخصصة",
-      subtitle: "عقارات مؤسسية وتجارية معقدة مدعومة بمطابقة دقيقة للمشترين والتوثيق وتنسيق البيع المنظم المصمم خصيصاً لقطاعي الرعاية الصحية والمتخصصة.",
+      subtitle:
+        "عقارات مؤسسية وتجارية معقدة مدعومة بمطابقة دقيقة للمشترين والتوثيق وتنسيق البيع المنظم المصمم خصيصاً لقطاعي الرعاية الصحية والمتخصصة.",
       features: [
-        { title: "مطابقة المشترين المؤسسيين", desc: "نستقطب بسرية ونؤهل المستثمرين المؤسسيين ومشغلي الرعاية الصحية والصناديق المتخصصة الباحثة عن الأصول الطبية التجارية." },
-        { title: "دعم العناية الواجبة", desc: "مساعدة شاملة في إعداد وتنظيم الوثائق التشغيلية والقانونية والمالية المطلوبة للاكتتاب المؤسسي الصارم." },
-        { title: "تنسيق منظم", desc: "المعاملات المعقدة تتطلب جداول زمنية صارمة وتنسيقاً دقيقاً. ندير التفاوض وتوافق أصحاب المصلحة متعددي الأطراف حتى الإغلاق النهائي." },
+        {
+          title: "مطابقة المشترين المؤسسيين",
+          desc: "نستقطب بسرية ونؤهل المستثمرين المؤسسيين ومشغلي الرعاية الصحية والصناديق المتخصصة الباحثة عن الأصول الطبية التجارية.",
+        },
+        {
+          title: "دعم العناية الواجبة",
+          desc: "مساعدة شاملة في إعداد وتنظيم الوثائق التشغيلية والقانونية والمالية المطلوبة للاكتتاب المؤسسي الصارم.",
+        },
+        {
+          title: "تنسيق منظم",
+          desc: "المعاملات المعقدة تتطلب جداول زمنية صارمة وتنسيقاً دقيقاً. ندير التفاوض وتوافق أصحاب المصلحة متعددي الأطراف حتى الإغلاق النهائي.",
+        },
       ],
       assetFocus: {
         label: "تركيز الأصول",
         title: "التنقل في المبيعات المؤسسية المعقدة",
         desc: "بيع مستشفى أو مركز طبي أو مجمع متخصص يتضمن التنقل في المتطلبات التنظيمية وعمليات التسليم والعناية الواجبة المكثفة. تعمل فالكم كوسيطك المخصص.",
         items: [
-          { title: "مستشفيات وعيادات خاصة", desc: "منشآت طبية تشغيلية كاملة تتطلب بيعاً سرياً لمشغلين مؤهلين أو صناديق استثمار عقاري." },
-          { title: "مجمعات متخصصة", desc: "مؤسسات تعليمية ومجمعات تجارية كبيرة ومرافق مؤسسية مخصصة الأغراض." },
-          { title: "تنفيذ سري", desc: "الحفاظ على الاستقرار التشغيلي أثناء تسويق الأصل لدوائر مستثمرين مقيّدة ومدققة للغاية." },
+          {
+            title: "مستشفيات وعيادات خاصة",
+            desc: "منشآت طبية تشغيلية كاملة تتطلب بيعاً سرياً لمشغلين مؤهلين أو صناديق استثمار عقاري.",
+          },
+          {
+            title: "مجمعات متخصصة",
+            desc: "مؤسسات تعليمية ومجمعات تجارية كبيرة ومرافق مؤسسية مخصصة الأغراض.",
+          },
+          {
+            title: "تنفيذ سري",
+            desc: "الحفاظ على الاستقرار التشغيلي أثناء تسويق الأصل لدوائر مستثمرين مقيّدة ومدققة للغاية.",
+          },
         ],
       },
       cta: {
         label: "بادر بالمحادثة",
         title: "ناقش أصلك المتخصص بسرية",
-        subtitle: "تواصل مع فريقنا المؤسسي لاستكشاف استراتيجيات استقطاب المشترين ومناهج التقييم لمستشفاك أو عقارك المتخصص.",
+        subtitle:
+          "تواصل مع فريقنا المؤسسي لاستكشاف استراتيجيات استقطاب المشترين ومناهج التقييم لمستشفاك أو عقارك المتخصص.",
         btn: "تواصل مع الفريق المتخصص",
       },
     },
     howItWorks: {
       label: "العملية",
       title: "مسار واضح من نية الإدراج إلى الإغلاق الناجح",
-      subtitle: "تتمحور المنصة حول تمثيل البائع لا البحث العام عن العقارات. التركيز على التسويق السري ومحادثات المشترين المؤهلين وإتمام الصفقة.",
+      subtitle:
+        "تتمحور المنصة حول تمثيل البائع لا البحث العام عن العقارات. التركيز على التسويق السري ومحادثات المشترين المؤهلين وإتمام الصفقة.",
       steps: [
         {
           num: "٠١",
           title: "مراجعة العقار",
           desc: "تراجع فالكم فئة الأصل وأهداف البيع والجاهزية قبل إعداد نهج مبيعات مخصص.",
-          detail: "يقيّم فريقنا نوع الأصل والتموضع الحالي في السوق وأهداف البائع لبناء استراتيجية تمثيل موجّهة."
+          detail:
+            "يقيّم فريقنا نوع الأصل والتموضع الحالي في السوق وأهداف البائع لبناء استراتيجية تمثيل موجّهة.",
         },
         {
           num: "٠٢",
           title: "استقطاب المشترين",
           desc: "يتم التواصل مع المشترين والمستثمرين المؤهلين بناءً على نوع العقار وقيمته وملف المشتري.",
-          detail: "نفعّل شبكتنا من المستثمرين المدققين مسبقاً ومكاتب العائلات والمشترين المؤسسيين وأصحاب الثروات الذين يتطابقون مع ملف الأصل."
+          detail:
+            "نفعّل شبكتنا من المستثمرين المدققين مسبقاً ومكاتب العائلات والمشترين المؤسسيين وأصحاب الثروات الذين يتطابقون مع ملف الأصل.",
         },
         {
           num: "٠٣",
           title: "التفاوض والتوافق",
           desc: "إدارة العروض والمناقشات وتوافق التوقعات لتحريك الصفقات الجادة.",
-          detail: "تتولى فالكم جميع تفاعلات المشترين وتصفي الاهتمام غير المؤهل وتضمن دائماً حماية موقف البائع."
+          detail:
+            "تتولى فالكم جميع تفاعلات المشترين وتصفي الاهتمام غير المؤهل وتضمن دائماً حماية موقف البائع.",
         },
         {
           num: "٠٤",
           title: "التوثيق والإغلاق",
           desc: "يستمر دعم أوراق المعاملات والتوثيق القانوني عبر المراحل النهائية حتى اكتمال الصفقة.",
-          detail: "ننسق مع المستشارين القانونيين ونضمن هيكلة جميع الوثائق بشكل صحيح ونرشد كلا الطرفين نحو إغلاق نظيف."
+          detail:
+            "ننسق مع المستشارين القانونيين ونضمن هيكلة جميع الوثائق بشكل صحيح ونرشد كلا الطرفين نحو إغلاق نظيف.",
         },
       ],
       note: "تُستحق رسوم النجاح فقط عند إغلاق الصفقة بنجاح، مما يوائم نتيجة فالكم مع نتيجة البائع منذ البداية.",
       cta: {
         label: "ابدأ الآن",
         title: "هل أنت مستعد لبدء العملية؟",
-        subtitle: "تواصل مع فريق فالكم لبدء مراجعة سرية لعقارك وتحديد مسار واضح نحو الإغلاق.",
+        subtitle:
+          "تواصل مع فريق فالكم لبدء مراجعة سرية لعقارك وتحديد مسار واضح نحو الإغلاق.",
         btn: "أدرج عقارك",
       },
     },
     contact: {
       label: "تواصل معنا",
       title: "ابدأ نقاشاً سرياً",
-      subtitle: "تواصل مع فريق فالكم لمناقشة أهدافك في بيع العقارات. نقدم تمثيلاً مهنياً وسرياً للعقارات السكنية والتجارية عالية القيمة.",
+      subtitle:
+        "تواصل مع فريق فالكم لمناقشة أهدافك في بيع العقارات. نقدم تمثيلاً مهنياً وسرياً للعقارات السكنية والتجارية عالية القيمة.",
       channels: [
-        { title: "واتساب", desc: "ابدأ محادثات سريعة لتأهيل البائعين ومطابقة المشترين والمناقشات الأولية للعقارات.", value: "+966 50 123 4567" },
-        { title: "الرقم الموحد", desc: "خط مركزي لاستفسارات البائعين وطلبات المستثمرين والتنسيق مع فريق دعم فالكم المخصص.", value: "9200 12345" },
-        { title: "راسلنا", desc: "شارك معلومات تفصيلية عن العقار وملخصات الأصول وطلبات التوثيق في قناة مكتوبة آمنة.", value: "info@falkum.sa" },
-        { title: "وسائل التواصل الاجتماعي", desc: "تابع أحدث رؤيتنا السوقية وحافظ على التواصل ووجّه الاحتمالات الجادة إلى محادثات خاصة.", value: "@falkum.sa" },
+        {
+          title: "واتساب",
+          desc: "ابدأ محادثات سريعة لتأهيل البائعين ومطابقة المشترين والمناقشات الأولية للعقارات.",
+          value: "+966 50 123 4567",
+          href: "https://wa.me/966501234567",
+        },
+        {
+          title: "الرقم الموحد",
+          desc: "خط مركزي لاستفسارات البائعين وطلبات المستثمرين والتنسيق مع فريق دعم فالكم المخصص.",
+          value: "9200 12345",
+          href: "tel:920012345",
+        },
+        {
+          title: "راسلنا",
+          desc: "شارك معلومات تفصيلية عن العقار وملخصات الأصول وطلبات التوثيق في قناة مكتوبة آمنة.",
+          value: "info@falkum.sa",
+          href: "mailto:info@falkum.sa",
+        },
+        {
+          title: "وسائل التواصل الاجتماعي",
+          desc: "تابع أحدث رؤيتنا السوقية وحافظ على التواصل ووجّه الاحتمالات الجادة إلى محادثات خاصة.",
+          value: "@falkum.sa",
+          href: "https://instagram.com/falkum.sa",
+        },
       ],
       form: {
         title: "أرسل استفساراً مباشراً",
@@ -666,7 +1078,14 @@ export const translations = {
         message: "الرسالة / تفاصيل العقار",
         messagePlaceholder: "قدم نظرة عامة موجزة على عقارك أو استفسارك...",
         submit: "إرسال الاستفسار",
-        assetOptions: ["فيلا / مسكن خاص", "مبنى تجاري", "فندق / ضيافة", "مستشفى / مركز طبي", "عقار استثماري", "أخرى"],
+        assetOptions: [
+          "فيلا / مسكن خاص",
+          "مبنى تجاري",
+          "فندق / ضيافة",
+          "مستشفى / مركز طبي",
+          "عقار استثماري",
+          "أخرى",
+        ],
       },
       success: {
         title: "تم إرسال الاستفسار",
@@ -675,7 +1094,8 @@ export const translations = {
     },
     listProperty: {
       title: "أدرج عقارك",
-      subtitle: "أرسل أصلك السكني أو التجاري للمراجعة. سيتصل بك ممثل فالكم خلال 24 ساعة لمناقشة التمثيل واستقطاب المشترين.",
+      subtitle:
+        "أرسل أصلك السكني أو التجاري للمراجعة. سيتصل بك ممثل فالكم خلال 24 ساعة لمناقشة التمثيل واستقطاب المشترين.",
       contactInfo: "معلومات التواصل",
       fullName: "الاسم الكامل",
       fullNamePlaceholder: "محمد العمري",
@@ -687,19 +1107,28 @@ export const translations = {
       emailPlaceholder: "john@example.com",
       assetDetails: "تفاصيل الأصل",
       assetCategory: "فئة الأصل",
-      assetCategoryOptions: ["تجاري - فندق", "تجاري - مستشفى", "سكني - فيلا", "استثمار - مبنى", "أخرى"],
+      assetCategoryOptions: [
+        "تجاري - فندق",
+        "تجاري - مستشفى",
+        "سكني - فيلا",
+        "استثمار - مبنى",
+        "أخرى",
+      ],
       cityLocation: "المدينة / الموقع",
       cityPlaceholder: "الرياض",
       description: "وصف العقار والتفاصيل الرئيسية",
-      descPlaceholder: "اصف العقار بإيجاز والوضع الحالي ونقاط البيع الرئيسية...",
+      descPlaceholder:
+        "اصف العقار بإيجاز والوضع الحالي ونقاط البيع الرئيسية...",
       submit: "إرسال طلب الإدراج",
       success: {
         title: "تم إرسال الطلب بنجاح",
-        message: "شكراً لإرسال عقارك. سيتصل بك ممثل فالكم خلال 24 ساعة لمناقشة التمثيل والخطوات التالية.",
+        message:
+          "شكراً لإرسال عقارك. سيتصل بك ممثل فالكم خلال 24 ساعة لمناقشة التمثيل والخطوات التالية.",
       },
     },
     footer: {
-      tagline: "منصة بيع عقارات سكنية وتجارية في المملكة العربية السعودية للفنادق والمستشفيات والمباني والفلل والأصول الاستثمارية.",
+      tagline:
+        "منصة بيع عقارات سكنية وتجارية في المملكة العربية السعودية للفنادق والمستشفيات والمباني والفلل والأصول الاستثمارية.",
     },
   },
 };

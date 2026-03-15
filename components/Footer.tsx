@@ -27,7 +27,7 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex flex-wrap gap-8">
-          <div className="flex flex-col lg:flex-row gap-6 items-center">
+          <div className="flex justify-center w-full gap-6 items-center">
             <Link
               href="/"
               className="text-[#edcfa1] hover:text-[#bf8b55] text-sm transition-colors"

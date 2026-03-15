@@ -65,9 +65,14 @@ export default function ContactPage() {
       <section className="px-4 pb-14 max-w-3xl mx-auto">
         <div className="grid sm:grid-cols-2 gap-4">
           {c.channels.map((ch, i) => (
-            <div
+            <a
               key={ch.title}
-              className="bg-[#0f1a2b] border border-[#1a2942] hover:border-[#bf8b55]/30 transition-colors rounded-2xl p-6"
+              href={ch.href}
+              target={ch.href.startsWith("http") ? "_blank" : undefined}
+              rel={
+                ch.href.startsWith("http") ? "noopener noreferrer" : undefined
+              }
+              className="block bg-[#0f1a2b] border border-[#1a2942] hover:border-[#bf8b55]/30 transition-colors rounded-2xl p-6 group"
             >
               <div className="w-10 h-10 border border-[#1a2942] rounded-xl mb-4 flex items-center justify-center">
                 <svg
@@ -83,8 +88,8 @@ export default function ContactPage() {
               <p className="text-[#edcfa1] text-sm leading-relaxed mb-4">
                 {ch.desc}
               </p>
-              <p className="text-[#bf8b55] text-sm font-medium flex items-center gap-1">
-                {ch.value}
+              <p className="text-[#bf8b55] text-sm font-medium flex items-center gap-1 group-hover:text-[#fee6a2] transition-colors">
+                <span dir="ltr">{ch.value}</span>
                 <svg
                   className="w-3.5 h-3.5"
                   fill="none"
@@ -99,13 +104,13 @@ export default function ContactPage() {
                   />
                 </svg>
               </p>
-            </div>
+            </a>
           ))}
         </div>
       </section>
 
       {/* Form */}
-      <section className="px-4 pb-20 max-w-2xl mx-auto">
+      {/* <section className="px-4 pb-20 max-w-2xl mx-auto">
         <div className="bg-[#0f1a2b] border border-[#1a2942] rounded-2xl p-6 md:p-8">
           {submitted ? (
             <div className="text-center py-8">
@@ -209,7 +214,7 @@ export default function ContactPage() {
             </>
           )}
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
