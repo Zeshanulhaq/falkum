@@ -5,7 +5,7 @@ import { useGsapAnimations } from "@/lib/useGsapAnimations";
 
 export default function ContactPage() {
   useGsapAnimations();
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const c = t.contact;
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({
@@ -115,7 +115,7 @@ export default function ContactPage() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M9 5l7 7-7 7"
+                    d={lang === "ar" ? "M15 5l-7 7 7 7" : "M9 5l7 7-7 7"}
                   />
                 </svg>
               </p>

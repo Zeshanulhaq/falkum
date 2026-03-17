@@ -908,20 +908,8 @@ video {
 .border-b{
   border-bottom-width: 1px;
 }
-.border-r{
-  border-right-width: 1px;
-}
-.border-r-0{
-  border-right-width: 0px;
-}
 .border-t{
   border-top-width: 1px;
-}
-.border-e{
-  border-inline-end-width: 1px;
-}
-.border-e-0{
-  border-inline-end-width: 0px;
 }
 .border-\[\#09101b\]\/40{
   border-color: rgb(9 16 27 / 0.4);
@@ -1581,12 +1569,12 @@ body {
     border-bottom-width: 1px;
   }
 
-  .sm\:border-e{
-    border-inline-end-width: 1px;
-  }
-
   .sm\:border-b-0{
     border-bottom-width: 0px;
+  }
+
+  .sm\:border-e{
+    border-inline-end-width: 1px;
   }
 
   .sm\:border-\[\#1a2942\]{
