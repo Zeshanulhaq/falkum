@@ -4,8 +4,10 @@ import Image from "next/image";
 import { useLang } from "@/lib/LanguageContext";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import CtaSection from "@/components/CtaSection";
+import { useGsapAnimations } from "@/lib/useGsapAnimations";
 
 export default function HomePage() {
+  useGsapAnimations();
   const { t } = useLang();
   const h = t.home;
 
@@ -14,7 +16,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="px-4 py-16 md:py-24 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-10 items-start">
-          <div>
+          <div data-gsap="headline">
             <div className="inline-flex items-center gap-2 bg-[#0f1a2b] border border-[#1a2942] rounded-lg px-4 py-2 mb-4">
               <svg
                 className="w-4 h-4 text-[#edcfa1] shrink-0"
@@ -29,20 +31,29 @@ export default function HomePage() {
                   d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
                 />
               </svg>
-              <span className="text-[#edcfa1] text-sm">
+              <span className="text-[#edcfa1] text-sm" data-gsap-child="badge">
                 {h.hero.trustBadge}
               </span>
             </div>
             <div className="mt-2 w-20 h-0.5 bg-[#edcfa1] mb-6" />
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#edcfa1] leading-tight mb-6">
+            <h1
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#edcfa1] leading-tight mb-6"
+              data-gsap-child="title"
+            >
               {h.hero.title}
             </h1>
-            <p className="text-[#edcfa1] text-sm sm:text-[19px] leading-8 mb-8">
+            <p
+              className="text-[#edcfa1] text-sm sm:text-[19px] leading-8 mb-8"
+              data-gsap-child="subtitle"
+            >
               {h.hero.subtitle}
             </p>
 
             {/* Tags */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+            <div
+              className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8"
+              data-gsap="stagger"
+            >
               {[
                 {
                   label: h.heroTags.buyerSourcing,
@@ -57,6 +68,8 @@ export default function HomePage() {
                 <div
                   key={tag.label}
                   className="bg-[#0f1a2b] border border-[#1a2942] rounded-lg p-3"
+                  data-gsap-item
+                  data-gsap-hover="lift"
                 >
                   <p className="text-[#bf8b55] text-[10px] font-semibold tracking-widest uppercase mb-1">
                     {tag.label}
@@ -68,7 +81,7 @@ export default function HomePage() {
               ))}
             </div>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3" data-gsap-child="cta">
               <Link href="/contact" className="gold-btn !font-normal">
                 {h.hero.cta}
               </Link>
@@ -86,9 +99,13 @@ export default function HomePage() {
               width={800}
               height={600}
               className="w-full h-full object-cover rounded-xl"
+              data-gsap="parallax"
             />
             <div className="grid grid-cols-2 gap-3">
-              <div className="bg-[#0f1a2b] border border-[#1a2942] rounded-lg p-4">
+              <div
+                className="bg-[#0f1a2b] border border-[#1a2942] rounded-lg p-4"
+                data-gsap-hover="lift"
+              >
                 <p className="text-[#edcfa1] font-semibold mb-1">
                   {h.assetTypes.residential}
                 </p>
@@ -96,7 +113,10 @@ export default function HomePage() {
                   {h.assetTypes.residentialDesc}
                 </p>
               </div>
-              <div className="bg-[#0f1a2b] border border-[#1a2942] rounded-lg p-4">
+              <div
+                className="bg-[#0f1a2b] border border-[#1a2942] rounded-lg p-4"
+                data-gsap-hover="lift"
+              >
                 <p className="text-[#edcfa1] font-semibold mb-1">
                   {h.assetTypes.commercial}
                 </p>
@@ -176,16 +196,32 @@ export default function HomePage() {
             ))}
           </div>
           <div className="p-8 bg-[#0f1a2b] border border-[#1a2942] rounded-lg">
-            <div className="grid grid-cols-2 md:grid-cols-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
               {[
                 h.stats.hours,
                 h.stats.confidential,
                 h.stats.point,
                 h.stats.upfront,
-              ].map(s => (
+              ].map((s, idx, arr) => (
                 <div
                   key={s.value}
-                  className={`bg-[#0f1a2b] border-r border-[#1a2942] ${s.value === h.stats.upfront.value ? "border-r-0" : "border-r"} p-6`}
+                  className={[
+                    "bg-[#0f1a2b] p-6",
+
+                    // Mobile (1 col): horizontal dividers between items.
+                    idx !== arr.length - 1 ? "border-b border-[#1a2942]" : "",
+
+                    // Mobile/tablet (2x2 on sm): add column divider (logical) + row divider.
+                    "sm:border-b-0",
+                    idx % 2 === 0 ? "sm:border-e sm:border-[#1a2942]" : "",
+                    idx < 2 ? "sm:border-b sm:border-[#1a2942]" : "",
+
+                    // Desktop (4 cols on md): only vertical dividers, RTL-safe.
+                    "md:border-b-0 md:border-e md:border-[#1a2942]",
+                    idx === arr.length - 1 ? "md:border-e-0" : "",
+                  ]
+                    .filter(Boolean)
+                    .join(" ")}
                 >
                   <p className="text-[#edcfa1] text-2xl font-bold mb-4">
                     {s.value}
@@ -342,7 +378,7 @@ export default function HomePage() {
                 <p className="text-[#edcfa1] text-sm leading-relaxed mb-6">
                   {h.contact.subtitle}
                 </p>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid gird-cols-1 sm:grid-cols-2 gap-3">
                   {[
                     { ...h.contact.whatsapp, icon: "whatsapp" },
                     { ...h.contact.email, icon: "email" },

@@ -4,8 +4,10 @@ import { useLang } from "@/lib/LanguageContext";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import CtaSection from "@/components/CtaSection";
 import Image from "next/image";
+import { useGsapAnimations } from "@/lib/useGsapAnimations";
 
 export default function AssetTypesPage() {
+  useGsapAnimations();
   const { t } = useLang();
   const a = t.assetTypes;
 
@@ -38,21 +40,33 @@ export default function AssetTypesPage() {
 
   return (
     <>
-      <section className="px-4 py-14 md:py-20 max-w-4xl mx-auto text-center">
-        <p className="section-label inline-block">{a.label}</p>
+      <section
+        className="px-4 py-14 md:py-20 max-w-4xl mx-auto text-center"
+        data-gsap="headline"
+      >
+        <p className="section-label inline-block" data-gsap-child="badge">
+          {a.label}
+        </p>
         <h1 className="text-3xl md:text-5xl font-bold text-[#edcfa1] mb-4">
           {a.title}
         </h1>
-        <p className="text-[#edcfa1] text-sm sm:text-base leading-relaxed">
+        <p
+          className="text-[#edcfa1] text-sm sm:text-base leading-relaxed"
+          data-gsap-child="subtitle"
+        >
           {a.subtitle}
         </p>
       </section>
 
-      <section className="px-4 pb-20 max-w-7xl mx-auto space-y-16">
+      <section
+        className="px-4 pb-20 max-w-7xl mx-auto space-y-16"
+        data-gsap="stagger"
+      >
         {items.map(({ href, data, imgLabel, image }, i) => (
           <div
             key={href}
             className={`grid md:grid-cols-2 gap-8 md:gap-12 items-center ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}
+            data-gsap-item
           >
             {i % 2 !== 0 ? (
               <>
@@ -102,7 +116,7 @@ export default function AssetTypesPage() {
 
 function AssetCard({ href, data }: { href: string; data: any }) {
   return (
-    <div>
+    <div data-gsap-hover="lift">
       <span className="inline-block text-[10px] font-semibold tracking-widest uppercase bg-[#0f1a2b] text-[#bf8b55] border border-[#bf8b55]/20 px-3 py-1 rounded mb-4">
         {data.tag}
       </span>

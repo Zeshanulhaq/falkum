@@ -1,8 +1,10 @@
 "use client";
 import { useState } from "react";
 import { useLang } from "@/lib/LanguageContext";
+import { useGsapAnimations } from "@/lib/useGsapAnimations";
 
 export default function ContactPage() {
+  useGsapAnimations();
   const { t } = useLang();
   const c = t.contact;
   const [submitted, setSubmitted] = useState(false);
@@ -51,19 +53,30 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="px-4 pt-14 pb-12 max-w-4xl mx-auto text-center">
-        <p className="section-label inline-block">{c.label}</p>
+      <section
+        className="px-4 pt-14 pb-12 max-w-4xl mx-auto text-center"
+        data-gsap="headline"
+      >
+        <p className="section-label inline-block" data-gsap-child="badge">
+          {c.label}
+        </p>
         <h1 className="text-3xl md:text-5xl font-bold text-[#edcfa1] mb-4">
           {c.title}
         </h1>
-        <p className="text-[#edcfa1] text-sm sm:text-base leading-relaxed">
+        <p
+          className="text-[#edcfa1] text-sm sm:text-base leading-relaxed"
+          data-gsap-child="subtitle"
+        >
           {c.subtitle}
         </p>
       </section>
 
       {/* Channel Cards */}
       <section className="px-4 pb-14 max-w-3xl mx-auto">
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4"
+          data-gsap="stagger"
+        >
           {c.channels.map((ch, i) => (
             <a
               key={ch.title}
@@ -73,6 +86,8 @@ export default function ContactPage() {
                 ch.href.startsWith("http") ? "noopener noreferrer" : undefined
               }
               className="block bg-[#0f1a2b] border border-[#1a2942] hover:border-[#bf8b55]/30 transition-colors rounded-2xl p-6 group"
+              data-gsap-item
+              data-gsap-hover="lift"
             >
               <div className="w-10 h-10 border border-[#1a2942] rounded-xl mb-4 flex items-center justify-center">
                 <svg

@@ -4,15 +4,17 @@ import { useLang } from "@/lib/LanguageContext";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import CtaSection from "@/components/CtaSection";
 import Image from "next/image";
+import { useGsapAnimations } from "@/lib/useGsapAnimations";
 
 export default function VillasPage() {
+  useGsapAnimations();
   const { t } = useLang();
   const v = t.villas;
 
   return (
     <>
       {/* Header */}
-      <section className="px-4 pt-12 pb-10 max-w-7xl mx-auto">
+      <section className="px-4 pt-12 pb-10 max-w-7xl mx-auto" data-gsap="headline">
         <nav className="text-xs text-[#edcfa1] mb-6">
           <Link
             href="/asset-types"
@@ -23,11 +25,13 @@ export default function VillasPage() {
           <span className="mx-2">›</span>
           <span className="text-[#edcfa1]">{v.title}</span>
         </nav>
-        <p className="section-label">{v.label}</p>
+        <p className="section-label" data-gsap-child="badge">
+          {v.label}
+        </p>
         <h1 className="text-3xl md:text-5xl font-bold text-[#bf8b55] mb-4 max-w-2xl leading-tight">
           {v.title}
         </h1>
-        <p className="text-[#edcfa1] text-sm sm:text-base leading-relaxed max-w-xl">
+        <p className="text-[#edcfa1] text-sm sm:text-base leading-relaxed max-w-xl" data-gsap-child="subtitle">
           {v.subtitle}
         </p>
       </section>
@@ -40,6 +44,7 @@ export default function VillasPage() {
           width={1198}
           height={558}
           className="w-full h-full object-cover rounded-xl"
+          data-gsap="parallax"
         />
       </section>
 
@@ -63,9 +68,14 @@ export default function VillasPage() {
               <h2 className="text-2xl font-bold text-[#edcfa1] mb-4">
                 {v.assetTypesTitle}
               </h2>
-              <div className="grid sm:grid-cols-2 gap-3">
+              <div className="grid sm:grid-cols-2 gap-3" data-gsap="stagger">
                 {v.assets.map(asset => (
-                  <div key={asset.title} className="card">
+                  <div
+                    key={asset.title}
+                    className="card"
+                    data-gsap-item
+                    data-gsap-hover="lift"
+                  >
                     <div className="w-8 h-8 bg-[#0f1a2b] border border-[#1a2942] rounded-lg mb-3 flex items-center justify-center">
                       <svg
                         className="w-4 h-4 text-[#bf8b55]"
