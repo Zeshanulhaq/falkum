@@ -94,13 +94,15 @@ export default function HomePage() {
           {/* Hero image + asset types */}
           <div className="flex flex-col gap-4">
             <Image
-              src="/hero.svg"
+              src="/hero.png"
               alt="Hero"
               width={800}
               height={600}
               className="w-full h-full object-cover rounded-xl"
               data-gsap="parallax"
             />
+
+            {/* Asset type cards - 2 column grid */}
             <div className="grid grid-cols-2 gap-3">
               <div
                 className="bg-[#0f1a2b] border border-[#1a2942] rounded-lg p-4"
@@ -125,7 +127,212 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
+
+            {/* Trust section - full width, outside the 2-col grid */}
+            <div className="bg-[#0f1a2b] border border-[#1a2942] rounded-lg p-5">
+              {/* Header row: label + badge */}
+              <div className="flex items-start justify-between gap-4 mb-4">
+                <div>
+                  <p className="section-label">{h.trust.label}</p>
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#edcfa1] mb-3 max-w-2xl">
+                    {h.trust.title}
+                  </h2>
+                </div>
+                <span className="shrink-0 inline-block bg-[#bf8b55] text-[#09101b] text-xs font-bold px-3 py-1 rounded-full">
+                  Seller-first
+                </span>
+              </div>
+
+              {/* Trust items - vertical list */}
+              <div className="flex flex-col gap-6">
+                {[
+                  {
+                    title: h.trust.forSellers,
+                    desc: h.trust.forSellersDesc,
+                    icon: "hero1.svg",
+                  },
+                  {
+                    title: h.trust.forBuyers,
+                    desc: h.trust.forBuyersDesc,
+                    icon: "hero2.svg",
+                  },
+                  {
+                    title: h.trust.aligned,
+                    desc: h.trust.alignedDesc,
+                    icon: "hero3.svg",
+                  },
+                ].map(item => (
+                  <div key={item.title} className="flex items-start gap-3">
+                    <div className="shrink-0">
+                      <Image
+                        src={`/${item.icon}`}
+                        alt={item.title}
+                        width={20}
+                        height={20}
+                        className="w-5 h-5"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="text-[#edcfa1] font-semibold text-sm mb-1">
+                        {item.title}
+                      </h3>
+                      <p className="text-[#edcfa1] text-xs leading-relaxed">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+      {/* Our Services */}
+      <section className="px-4 py-16 md:py-20 border-t border-[#0f1a2b]">
+        <div className="max-w-7xl mx-auto space-y-10">
+          {/* Header */}
+          <div>
+            <p className="section-label">{h.services.label}</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#edcfa1] mb-4 max-w-2xl">
+              {h.services.title}
+            </h2>
+            <p className="text-[#edcfa1] text-sm leading-relaxed max-w-xl">
+              {h.services.subtitle}
+            </p>
+          </div>
+
+          {/* Service cards */}
+          <div className="grid sm:grid-cols-3 gap-4">
+            {[
+              {
+                title: h.services.brokerage.title,
+                desc: h.services.brokerage.desc,
+                items: h.services.brokerage.items,
+                icon: "brokerage",
+              },
+              {
+                title: h.services.facilities.title,
+                desc: h.services.facilities.desc,
+                items: h.services.facilities.items,
+                icon: "facilities",
+              },
+              {
+                title: h.services.development.title,
+                desc: h.services.development.desc,
+                items: h.services.development.items,
+                icon: "development",
+              },
+            ].map(service => (
+              <div key={service.title} className="card">
+                <div className="w-10 h-10 bg-[#0f1a2b] border border-[#1a2942] rounded-lg mb-4 flex items-center justify-center text-[#bf8b55]">
+                  {service.icon === "brokerage" && (
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  )}
+                  {service.icon === "facilities" && (
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                      />
+                    </svg>
+                  )}
+                  {service.icon === "development" && (
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                  )}
+                </div>
+                <h3 className="text-[#edcfa1] font-semibold text-base mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-[#edcfa1] text-sm leading-relaxed mb-3">
+                  {service.desc}
+                </p>
+                <ul className="space-y-1">
+                  {service.items.map(item => (
+                    <li
+                      key={item}
+                      className="flex items-center gap-2 text-[#edcfa1] text-xs"
+                    >
+                      <svg
+                        className="w-3.5 h-3.5 text-[#bf8b55] shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          {/* Stats row */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 border border-[#1a2942] rounded-lg overflow-hidden">
+            {[
+              { number: "01", desc: h.services.stats.brokerage },
+              { number: "02", desc: h.services.stats.facilities },
+              { number: "03", desc: h.services.stats.development },
+              {
+                number: h.services.stats.partnerLabel,
+                desc: h.services.stats.partnerDesc,
+              },
+            ].map((stat, i) => (
+              <div
+                key={i}
+                className={`p-5 bg-[#0f1a2b] ${i < 3 ? "border-r border-[#1a2942]" : ""}`}
+              >
+                <p className="text-[#edcfa1] text-2xl font-bold mb-2">
+                  {stat.number}
+                </p>
+                <p className="text-[#edcfa1] text-xs leading-relaxed">
+                  {stat.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Footer text */}
+          <p className="text-[#edcfa1] text-sm leading-relaxed max-w-2xl">
+            {h.services.footer}
+          </p>
         </div>
       </section>
 
@@ -332,7 +539,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Clear path – How it works + Contact channels (single section) */}
+      {/* Clear path – How it works */}
       <section className="px-4 py-16 md:py-20 border-t border-[#0f1a2b]">
         <div className="max-w-7xl mx-auto space-y-12">
           <div className="">
@@ -343,170 +550,29 @@ export default function HomePage() {
             <p className="text-[#edcfa1] text-sm leading-relaxed mb-8 max-w-[860px]">
               {h.howItWorks.subtitle}
             </p>
-            <div className="grid md:grid-cols-2 gap-10 md:gap-16">
-              <div className="bg-[#0f1a2b] border border-[#1a2942] h-fit rounded-lg p-8">
-                <div className="space-y-5 ">
-                  {h.howItWorks.steps.map(step => (
-                    <div key={step.num} className="flex gap-4">
-                      <div className="w-8 h-8 bg-[#bf8b55] rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                        <span className="text-[#09101b] text-xs font-bold">
-                          {step.num}
-                        </span>
-                      </div>
-                      <div>
-                        <h3 className="text-[#edcfa1] font-semibold text-sm mb-1">
-                          {step.title}
-                        </h3>
-                        <p className="text-[#edcfa1] text-xs leading-relaxed">
-                          {step.desc}
-                        </p>
-                      </div>
+            <div className="bg-[#0f1a2b] border border-[#1a2942] h-fit rounded-lg p-8">
+              <div className="space-y-5 ">
+                {h.howItWorks.steps.map(step => (
+                  <div key={step.num} className="flex gap-4">
+                    <div className="w-8 h-8 bg-[#bf8b55] rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                      <span className="text-[#09101b] text-xs font-bold">
+                        {step.num}
+                      </span>
                     </div>
-                  ))}
-                </div>
-                <p className="mt-6 text-[#edcfa1] text-xs italic leading-relaxed border-t border-[#0f1a2b] pt-4">
-                  {h.howItWorks.successFee}
-                </p>
+                    <div>
+                      <h3 className="text-[#edcfa1] font-semibold text-sm mb-1">
+                        {step.title}
+                      </h3>
+                      <p className="text-[#edcfa1] text-xs leading-relaxed">
+                        {step.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
-
-              {/* Contact channels */}
-              <div className="bg-[#0f1a2b] border border-[#1a2942] rounded-lg p-8">
-                <p className="section-label">{h.contact.label}</p>
-                <h2 className="text-2xl md:text-3xl font-bold text-[#edcfa1] mb-4">
-                  {h.contact.title}
-                </h2>
-                <p className="text-[#edcfa1] text-sm leading-relaxed mb-6">
-                  {h.contact.subtitle}
-                </p>
-                <div className="grid gird-cols-1 sm:grid-cols-2 gap-3">
-                  {[
-                    { ...h.contact.whatsapp, icon: "whatsapp" },
-                    { ...h.contact.email, icon: "email" },
-                    { ...h.contact.unified, icon: "phone" },
-                    { ...h.contact.social, icon: "social" },
-                  ].map(ch => (
-                    <a
-                      key={ch.label}
-                      href={ch.href}
-                      target={
-                        ch.href?.startsWith("http") ? "_blank" : undefined
-                      }
-                      rel={
-                        ch.href?.startsWith("http")
-                          ? "noopener noreferrer"
-                          : undefined
-                      }
-                      className="card block group hover:border-[#bf8b55]/40 transition-colors"
-                    >
-                      <div className="w-10 h-10 flex items-center justify-center mb-3 text-[#bf8b55]">
-                        {ch.icon === "whatsapp" && (
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={1.5}
-                              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                            />
-                          </svg>
-                        )}
-                        {ch.icon === "email" && (
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={1.5}
-                              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                            />
-                          </svg>
-                        )}
-                        {ch.icon === "phone" && (
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={1.5}
-                              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                            />
-                          </svg>
-                        )}
-                        {ch.icon === "social" && (
-                          <svg
-                            className="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <rect
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={1.5}
-                              x="3"
-                              y="3"
-                              width="18"
-                              height="18"
-                              rx="4"
-                            />
-                            <circle
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={1.5}
-                              cx="12"
-                              cy="12"
-                              r="4"
-                            />
-                            <circle
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={1.5}
-                              cx="17.5"
-                              cy="6.5"
-                              r="1.5"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        )}
-                      </div>
-                      <p className="text-[#bf8b55] text-[10px] font-semibold tracking-widest uppercase mb-2">
-                        {ch.label}
-                      </p>
-                      <p className="text-[#edcfa1] text-xs leading-relaxed mb-2">
-                        {ch.desc}
-                      </p>
-                      <p className="text-[#bf8b55] text-sm font-medium flex items-center gap-1 group-hover:text-[#fee6a2] transition-colors">
-                        <span dir="ltr">{ch.value}</span>
-                        <svg
-                          className="w-3.5 h-3.5"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M9 5l7 7-7 7"
-                          />
-                        </svg>
-                      </p>
-                    </a>
-                  ))}
-                </div>
-              </div>
+              <p className="mt-6 text-[#edcfa1] text-xs italic leading-relaxed border-t border-[#0f1a2b] pt-4">
+                {h.howItWorks.successFee}
+              </p>
             </div>
           </div>
         </div>

@@ -1,4 +1,13 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/asset-types/hospitals/page": "app/asset-types/hospitals/page.js",
+  "/asset-types/buildings/page": "app/asset-types/buildings/page.js",
+  "/asset-types/hotels/page": "app/asset-types/hotels/page.js",
+  "/asset-types/page": "app/asset-types/page.js",
+  "/icon.svg/route": "app/icon.svg/route.js",
+  "/asset-types/villas/page": "app/asset-types/villas/page.js",
   "/page": "app/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/contact/page": "app/contact/page.js",
+  "/how-it-works/page": "app/how-it-works/page.js",
+  "/list-property/page": "app/list-property/page.js"
 }

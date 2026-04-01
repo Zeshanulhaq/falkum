@@ -11,19 +11,19 @@ export const translations = {
       hero: {
         trustBadge: "Trusted property brokerage platform in Saudi Arabia",
         title:
-          "Connecting serious buyers with residential and commercial property sellers",
+          "Brokerage, facilities management, and development under one real estate partner",
         subtitle:
-          "Falkum is a selling platform for residential and commercial assets such as hotels, hospitals, buildings, villas, and investment properties. We manage buyer sourcing, negotiations, and legal documentation with commission charged only upon successful deal closure.",
+          "Falkum brings together three complementary service lines to support residential and commercial assets. Discreet selling, property operations, and asset development—all coordinated under one trusted partner with success-fee alignment.",
         cta: "Contact Falkum",
         viewCategories: "View asset categories",
       },
       heroTags: {
         buyerSourcing: "BUYER SOURCING",
         buyerSourcingDesc:
-          "Targeted outreach to qualified local and international buyers for premium transactions.",
+          "Targeted outreach to qualified local and international buyers for serious transactions.",
         negotiation: "NEGOTIATION SUPPORT",
         negotiationDesc:
-          "Dedicated negotiation management designed for high-value private and institutional assets.",
+          "Structured negotiation management designed for high-value private and institutional assets.",
         legal: "LEGAL DOCUMENTATION",
         legalDesc:
           "Clear transaction coordination and documentation support through the closing stage.",
@@ -37,28 +37,22 @@ export const translations = {
           "Hotels, hospitals, office buildings, and specialized assets",
       },
       trust: {
-        label: "WHY CHOOSE FALKUM",
-        title: "Built to create trust for both sellers and serious buyers",
+        label: "WHY SELLERS CHOOSE FALKUM",
+        title: "A more complete trust layer beside the contact area",
         subtitle:
-          "Falkum is positioned as a discreet transaction partner, not just a listing platform. We help sellers protect asset value while giving serious buyers a more structured path to verified approaches, negotiations, and documentation.",
-        forSellers: "Trust for sellers",
+          "Falkum is positioned as a discreet transaction partner, not just a listing platform.",
+        forSellers: "Confidential process",
         forSellersDesc:
-          "Sellers work through a controlled sales practice with better confidentiality, qualified buyer introductions, and representation focused on protecting their equity.",
-        forSellersItems: [
-          "Confidential buyer communication",
-          "Seller-first negotiation support",
-        ],
-        forBuyers: "Confidence for buyers",
+          "Private asset discussions handled with controlled buyer exposure.",
+        forSellersItems: [],
+        forBuyers: "Qualified buyers",
         forBuyersDesc:
-          "Qualified buyers and investors get access to structured opportunities with clearer communication, faster coordination, and direct serious transaction handling.",
-        forBuyersItems: [
-          "Curated asset introductions",
-          "Documentation coordination",
-        ],
-        aligned: "Aligned incentives",
+          "Serious local and international buyers matched to the right asset class.",
+        forBuyersItems: [],
+        aligned: "Closing support",
         alignedDesc:
-          "Because Falkum earns on successful closure, the process stays focused on serious matches, clear negotiations, and progressing the transaction to completion.",
-        alignedItems: ["Success-fee model", "Outcome-driven execution"],
+          "Negotiation and documentation support carried through to successful closure.",
+        alignedItems: [],
       },
       trustSummary:
         "Falkum combines rigorous buyer qualification, financial framing, and outcome-driven execution so both sellers and serious buyers benefit from a single, aligned transaction partner.",
@@ -119,6 +113,44 @@ export const translations = {
           tag2: "Due diligence support",
           badge: "Specialized",
         },
+      },
+      services: {
+        label: "OUR SERVICES",
+        title:
+          "Integrated real estate services for sale, operation, and development",
+        subtitle:
+          "Falkum brings together three complementary service lines under one brokerage for selling residential and commercial assets, facilities management for leasing and day-to-day operations, and development support for shaping long-term opportunities.",
+        brokerage: {
+          title: "Brokerage",
+          desc: "Discreet sourcing, representation, and transaction management for serious buyers and institutional investors across residential and commercial property classes.",
+          items: [
+            "Qualified buyer sourcing",
+            "Negotiation and closing support",
+          ],
+        },
+        facilities: {
+          title: "Facilities management",
+          desc: "Operations coordination and property management services for owners with rental, leasing, or tenancy arrangements.",
+          items: ["Leasing and tenant support", "Property operations"],
+        },
+        development: {
+          title: "Development",
+          desc: "Investment tracking, value creation support, and capability focus for longer-term asset development and master planning.",
+          items: ["Project planning support", "Value creation strategy"],
+        },
+        stats: {
+          brokerage:
+            "Brokerage for serious property sales and transaction execution.",
+          facilities:
+            "Facilities management supporting leasing and operational continuity.",
+          development:
+            "Development capabilities focused on growth and repositioning opportunities.",
+          partnerLabel: "1 partner",
+          partnerDesc:
+            "A single brand that can support sale, operation, and future development needs.",
+        },
+        footer:
+          "This section now presents Falkum as a broader real estate company with three service pillars, while keeping brokerage as the main service already highlighted across the page.",
       },
       howItWorks: {
         label: "HOW IT WORKS",
@@ -586,23 +618,21 @@ export const translations = {
     home: {
       hero: {
         trustBadge: "منصة وساطة عقارية موثوقة في المملكة العربية السعودية",
-        title:
-          "نربط البائعين بالمشترين الجادين للأصول العقارية السكنية والتجارية",
+        title: "الوساطة والتسيير والتطوير تحت مظلة شريك عقاري واحد",
         subtitle:
-          "فالكم منصة متخصصة في بيع الأصول العقارية السكنية والتجارية مثل الفنادق والمستشفيات والمباني والفلل والعقارات الاستثمارية. ندير عمليات استقطاب المشترين والتفاوض وإجراءات التوثيق القانوني، ويتم احتساب العمولة فقط عند إتمام الصفقة بنجاح.",
+          "تجمع فالكم بين ثلاث خطوط خدمات متكاملة لدعم الأصول السكنية والتجارية. البيع السري وإدارة العمليات وتطوير الأصول - كل ذلك بتنسيق واحد من شريك موثوق مع محاذاة نموذج العمولة عند النجاح.",
         cta: "تواصل مع فالكم",
         viewCategories: "عرض فئات الأصول",
       },
       heroTags: {
         buyerSourcing: "استقطاب المشترين",
         buyerSourcingDesc:
-          "وصول مستهدف إلى مشترين محليين ودوليين مؤهلين لإتمام صفقات جادة وعالية القيمة.",
+          "استقطاب موجّه للمشترين المحليين والدوليين المؤهلين لإتمام معاملات جادة.",
         negotiation: "دعم التفاوض",
         negotiationDesc:
-          "إدارة تفاوض منظمة تناسب الأصول الخاصة والمؤسسية ذات القيمة المرتفعة.",
+          "إدارة تفاوض منظمة مصممة للأصول الخاصة والمؤسسية ذات القيمة العالية.",
         legal: "التوثيق القانوني",
-        legalDesc:
-          "تنسيق واضح لمراحل الصفقة ودعم للتوثيق حتى الوصول إلى الإغلاق النهائي.",
+        legalDesc: "تنسيق معاملات واضح ودعم توثيق خلال مرحلة الإغلاق.",
       },
       assetTypes: {
         residential: "سكني",
@@ -611,25 +641,21 @@ export const translations = {
         commercialDesc: "فنادق ومستشفيات ومبانٍ مكتبية وأصول متخصصة",
       },
       trust: {
-        label: "لماذا فالكم",
-        title: "منصة مبنية على الثقة للبائعين والمشترين الجادين",
+        label: "لماذا يختار البائعون فالكم",
+        title: "طبقة ثقة أكثر اكتمالاً بجانب منطقة التواصل",
         subtitle:
-          "فالكم ليست مجرد منصة عرض، بل شريك معاملات يعمل بسرية واحترافية. نساعد البائعين على حماية قيمة أصولهم، ونمنح المشترين الجادين مساراً أوضح للوصول إلى الفرص المناسبة والتفاوض عليها واستكمال توثيقها.",
-        forSellers: "ثقة للبائعين",
+          "فالكم ليست مجرد منصة عرض، بل شريك معاملات يعمل بسرية واحترافية.",
+        forSellers: "عملية سرية",
         forSellersDesc:
-          "يحصل المالك على عملية بيع أكثر ضبطاً وسرية، مع تقديم العقار لمشترين مؤهلين وتمثيل يركز على جودة الصفقة وحماية مصلحة البائع.",
-        forSellersItems: [
-          "تواصل سري مع المشترين",
-          "دعم تفاوض يركز على مصلحة البائع",
-        ],
-        forBuyers: "وضوح للمشترين",
+          "نقاشات الأصول الخاصة يتم التعامل معها بحماية مشتر منظمة.",
+        forSellersItems: [],
+        forBuyers: "مشترون مؤهلون",
         forBuyersDesc:
-          "يحصل المشترون والمستثمرون المؤهلون على فرص مرتبة بشكل أفضل، مع تواصل أوضح وتنسيق أسرع وتعامل أكثر جدية مع الصفقات.",
-        forBuyersItems: ["فرص عقارية منتقاة", "تنسيق للتوثيق والمستندات"],
-        aligned: "توافق في المصالح",
-        alignedDesc:
-          "بما أن دخل فالكم مرتبط بإتمام الصفقة بنجاح، يبقى التركيز على مطابقة الأطراف الجادة، وإدارة تفاوض نظيف، والوصول إلى الإغلاق النهائي.",
-        alignedItems: [" نموذج عمولة عند النجاح ", "تنفيذ موجّه نحو النتائج"],
+          "مشترون محليون ودوليون جادون يتم مطابقتهم مع فئة الأصل المناسبة.",
+        forBuyersItems: [],
+        aligned: "دعم الإغلاق",
+        alignedDesc: "دعم التفاوض والتوثيق يستمر حتى الإغلاق الناجح.",
+        alignedItems: [],
       },
       trustSummary:
         "أرقام توضيحية للعرض فقط: 48 صفقة مغلقة، وأصول مسوقة بقيمة 1.2 مليار ريال، وأكثر من 320 علاقة نشطة مع مشترين ومستثمرين، ومعدل إحالة متكررة يبلغ 76%. يمكن استبدالها لاحقاً بأرقام فالكم المعتمدة.",
@@ -670,7 +696,7 @@ export const translations = {
         },
         buildings: {
           title: "المباني والأصول المدرة للدخل",
-          desc: "مبانٍ سكنية واستعمالات مختلطة وأصول مدرة للدخل تُسوَّق مع تأهيل أفضل للمشترين وطرح استثماري أوضح.",
+          desc: "مبانٍ سكنية واستعمالات مختلطة وأصول مدرة للدخل تُسوَّق مع تأهيل أفضل للمشترين وطرح استثماري أوضح.",
           tag1: "مبانٍ",
           tag2: "مشترون بعائد استثماري",
           badge: "استثماري",
@@ -684,11 +710,42 @@ export const translations = {
         },
         hospitals: {
           title: "المستشفيات والأصول المتخصصة",
-          desc: "صول مؤسسية وتجارية معقدة يتم دعمها عبر مطابقة المشترين والتوثيق وتنسيق البيع بشكل منظم.",
+          desc: "أصول مؤسسية وتجارية معقدة يتم دعمها عبر مطابقة المشترين والتوثيق وتنسيق البيع بشكل منظم.",
           tag1: "مستشفيات",
           tag2: "دعم العناية الواجبة",
           badge: "متخصص",
         },
+      },
+      services: {
+        label: "خدماتنا",
+        title: "خدمات عقارية متكاملة للبيع والتشغيل والتطوير",
+        subtitle:
+          "تجمع فالكم بين ثلاث خطوط خدمات متكاملة تحت مظلة واحدة - الوساطة لبيع الأصول السكنية والتجارية وإدارة العقارات لتأجير وتشغيل يومي والتطوير لدعم الفرص طويلة الأجل.",
+        brokerage: {
+          title: "الوساطة العقارية",
+          desc: "استقطاب سري وتمثيل وإدارة معاملات للمشترين الجادين والمستثمرين المؤسسيين عبر فئات الأصول السكنية والتجارية.",
+          items: ["استقطاب مشترين مؤهلين", "دعم التفاوض والإغلاق"],
+        },
+        facilities: {
+          title: "إدارة العقارات",
+          desc: "تنسيق التشغيل وخدمات إدارة الممتلكات للمالكين مع ترتيبات إيجار أو تأجير أو استئجار.",
+          items: ["دعم الإيجار والمستأجرين", "عمليات المنشآت"],
+        },
+        development: {
+          title: "التطوير",
+          desc: "تتبع الاستثمار ودعم خلق القيمة والقدرات الموجهة للتطوير طويل الأجل للأصول والتخطيط الرئيسي.",
+          items: ["دعم تخطيط المشاريع", "استراتيجية خلق القيمة"],
+        },
+        stats: {
+          brokerage: "وساطة لمبيعات العقارات الجادة وتنفيذ المعاملات.",
+          facilities: "إدارة عقارات تدعم التأجير والاستمرارية التشغيلية.",
+          development: "قدرات تطوير تركز على النمو وإعادة تموضع الأصول.",
+          partnerLabel: "شريك واحد",
+          partnerDesc:
+            "علامة تجارية واحدة قادرة على دعم البيع والتشغيل واحتياجات التطوير المستقبلية.",
+        },
+        footer:
+          "أتاحت هذه الخدمات الثلاث لفالكم الاقتراب أكثر من العملاء النهائيين بعروض خدمات متكاملة وبناء الوساطة كركيزة أساسية وقاعدة قوة لاستكشاف فرص قطاعية جديدة.",
       },
       howItWorks: {
         label: "آلية العمل",
